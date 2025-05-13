@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Projects() {
+  useEffect(() => {
+    AOS.init({ duration: 600, once: true });
+  }, []);
+
   const projects = [
     {
       title: "ポートフォリオサイト",
@@ -25,12 +31,16 @@ export default function Projects() {
   return (
     <section className="min-h-screen py-16 px-4 bg-gray-900 text-white snap-start" id="projects">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-          プロジェクト一覧
+        <h2 className="text-4xl md:text-6xl font-semibold text-center mb-12 font-serif tracking-wide">
+          Output
         </h2>
         <div className="grid md:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <div key={index} className="rounded-xl overflow-hidden shadow hover:shadow-lg transition bg-white text-black">
+            <div
+              key={index}
+              data-aos="fade-up"
+              className="rounded-xl overflow-hidden shadow transform transition duration-500 hover:scale-105 hover:shadow-2xl bg-white text-black"
+            >
               <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
               <div className="p-4">
                 <h3 className="text-xl font-semibold mb-2">{project.title}</h3>

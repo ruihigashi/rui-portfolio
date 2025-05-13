@@ -75,7 +75,7 @@ export default function RadarChart() {
   };
 
   return (
-    <div className="w-full max-w-md h-[400px] mx-auto">
+    <div className="w-full max-w-md h-[250px] mx-auto">
       <Radar data={data} options={options} />
     </div>
   );

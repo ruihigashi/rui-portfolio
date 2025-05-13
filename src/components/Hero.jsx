@@ -30,13 +30,13 @@ export default function Hero() {
         <div className="flex flex-col items-center mb-4">
           <img src={logo} alt="Kina" className="w-20 h-20 rounded-full border-2 border-white mb-4" />
           <h1 className="text-5xl md:text-7xl font-light leading-tight tracking-wide">
-            I’m <span className="font-bold text-white">Kina</span>
+            RUI <span className="font-bold text-white">HIGASHI</span>
           </h1>
         </div>
         <p className="mt-4 text-lg md:text-xl text-gray-400">
-          I design and code beautifully simple things. I love what I do.
+          ENGINEER PORTFOLIO.
         </p>
-        <div className="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
+        {/* <div className="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
           <a
             href="#projects"
             className="px-8 py-3 bg-white text-black text-sm font-medium rounded-full hover:bg-gray-200 transition"
@@ -49,7 +49,7 @@ export default function Hero() {
           >
             Get in Touch
           </a>
-        </div>
+        </div> */}
       </motion.div>
     </section>
   );

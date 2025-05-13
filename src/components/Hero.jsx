@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import logo from "../assets/images/kina.jpg";
 
 export default function Hero() {
   const controls = useAnimation();
@@ -26,10 +27,13 @@ export default function Hero() {
         initial="hidden"
         animate={controls}
       >
-        <h1 className="text-5xl md:text-7xl font-light leading-tight tracking-wide">
-          I’m <span className="font-bold text-white">Kina</span>
-        </h1>
-        <p className="mt-6 text-lg md:text-xl text-gray-400">
+        <div className="flex flex-col items-center mb-4">
+          <img src={logo} alt="Kina" className="w-20 h-20 rounded-full border-2 border-white mb-4" />
+          <h1 className="text-5xl md:text-7xl font-light leading-tight tracking-wide">
+            I’m <span className="font-bold text-white">Kina</span>
+          </h1>
+        </div>
+        <p className="mt-4 text-lg md:text-xl text-gray-400">
           I design and code beautifully simple things. I love what I do.
         </p>
         <div className="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">

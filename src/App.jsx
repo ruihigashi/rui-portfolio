@@ -1,15 +1,15 @@
 // App.jsx
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "./index.css";
 import SakuraCanvas from "./components/SakuraCanvas";
+import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-
-import { useEffect, useRef } from "react";
+import AboutIntro from "./components/AboutIntro";
 
 export default function App() {
   const containerRef = useRef(null);
@@ -54,13 +54,28 @@ export default function App() {
       className="font-sans text-gray-900 bg-black relative h-screen overflow-hidden"
     >
       <SakuraCanvas />
-      <Hero />
-      <Skills />
-      <Projects />
-      <About />
-      <Contact />
-      <Footer />
+      <Header />
+      <div id="hero" className="min-h-screen snap-start">
+        <Hero />
+      </div>
+      <div id="aboutIntro" className="min-h-screen snap-start">
+        <AboutIntro />
+      </div>
+      <div id="about" className="min-h-screen snap-start">
+        <About />
+      </div>
+      <div id="skills" className="min-h-screen snap-start">
+        <Skills />
+      </div>
+      <div id="projects" className="min-h-screen snap-start">
+        <Projects />
+      </div>
+      <div id="contact" className="min-h-screen snap-start">
+        <Contact />
+      </div>
+      <div className="min-h-screen snap-start">
+        <Footer />
+      </div>
     </div>
   );
 }
-

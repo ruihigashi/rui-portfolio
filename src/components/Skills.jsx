@@ -1,90 +1,107 @@
-// components/Skills.jsx
-import React from "react";
+import React, { useEffect } from "react";
 import { Star } from "lucide-react";
-import { FaHtml5, FaCss3Alt, FaJsSquare, FaJava, FaPython, FaPhp, FaLaravel, FaVuejs, FaAws, FaDatabase, FaDocker, FaLinux, FaGithub, FaWindows } from "react-icons/fa";
+import { SiFirebase } from 'react-icons/si';
+import { FaHtml5, FaCss3Alt, FaJsSquare, FaJava, FaPython, FaPhp, FaLaravel, FaVuejs, FaAws, FaDatabase, FaDocker, FaLinux, FaGithub, FaWindows, FaReact } from "react-icons/fa";
 import RadarChart from "./RadarChart";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 export default function Skills() {
+    useEffect(() => {
+      AOS.init({ duration: 600, once: true });
+    }, []);
+  
   return (
     <section className="py-20 px-4 bg-white text-black" id="skills">
-      <div className="max-w-5xl mx-auto text-center">
+      <div className="max-w-5xl mx-auto text-center" data-aos="fade-up">
         <h2  className="text-4xl md:text-6xl font-semibold mb-6 font-serif tracking-wide">SKILL</h2>
         <p className="text-gray-600 mt-4 text-sm md:text-base leading-relaxed">
-          クラウド関連を中心に幅広く技術習得に励んでおります。<br />
-          これからも日々研鑽していきます！以下チャートは各スキルごとの得意度をレートで示しています。
+          私の現在のスキルを8つの項目に分けてグラフィカルにまとめました。<br />
+          開発では主にフロントエンドを担当し、広く浅くではありますがバックエンドの開発にも携わってきました。<br />
+          今後はバックエンド系の開発（クラウド含む）にも力をいれ、オールラウンドに対応できるエンジニアになりたいと考えています。<br />
+          エンジニアとしてはまだまだ未熟者ではありますが今現在のスキルがどれくらいかが伝われば幸いです。<br />
+          <br />
+          ※授業やハッカソンの開発等で実際に使用した技術のみ掲載しております。
         </p>
 
-        <div className="my-12">
+        <div className="my-12" data-aos="fade-up">
           <RadarChart />
         </div>
 
         <h3 className="text-xl font-bold mb-6 tracking-wide border-b-2 border-gray-300 inline-block pb-2"> FRONT-END</h3>
-        <div className="grid md:grid-cols-2 gap-10 text-left max-w-4xl mx-auto mb-16">
+        <div className="grid md:grid-cols-2 gap-10 text-left max-w-4xl mx-auto mb-16" data-aos="fade-up">
           <SkillItem
             icon={<FaHtml5 className="text-5xl text-orange-500" />}
             name="HTML5"
             stars={4}
-            description="HTMLの独学をきっかけにオープン系開発に興味を持ちました。"
+            description="授業等で学習し、ＥＣサイトを作成した際に使用。"
           />
           <SkillItem
             icon={<FaCss3Alt className="text-5xl text-blue-500" />}
             name="CSS3"
             stars={4}
-            description="CSSの独学をきっかけにオープン系開発に興味を持ちました。"
+            description="授業等で学習し、ＥＣサイトを作成した際に使用。"
           />
           <SkillItem
             icon={<FaJsSquare className="text-5xl text-yellow-500" />}
             name="JavaScript"
             stars={3}
-            description="JavaScriptを使って動的なUIの実装に挑戦しています。"
+            description="JavaScriptを使って動的なUIの実装に挑戦中。"
           />
         </div>
 
         <h3 className="text-xl font-bold mb-6 tracking-wide border-b-2 border-gray-300 inline-block pb-2"> BACK-END</h3>
-        <div className="grid md:grid-cols-2 gap-10 text-left max-w-4xl mx-auto mb-16">
+        <div className="grid md:grid-cols-2 gap-10 text-left max-w-4xl mx-auto mb-16" data-aos="fade-up">
           <SkillItem
             icon={<FaJava className="text-5xl text-red-600" />}
             name="Java"
             stars={4}
-            description="Javaを通してオブジェクト指向を学習し、開発環境ではEclipseを使用しました。"
+            description="授業等でJavaを通してオブジェクト指向を学習し、開発環境ではEclipseを使用しました。"
           />
           <SkillItem
             icon={<FaPhp className="text-5xl text-indigo-600" />}
             name="PHP"
             stars={3}
-            description="LAMP環境構築を学ぶために使用しました。"
+            description="授業等でPHPを学習し、活用してwebサイトを作成。"
           />
           <SkillItem
             icon={<FaPython className="text-5xl text-yellow-600" />}
             name="Python"
             stars={2}
-            description="Webスクレイピングや定型作業自動化のために使用しています。FWについては独学中です。"
+            description="セキュリティコンテストに参加した際に少し使用。独学で学習中。"
           />
         </div>
 
         <h3 className="text-xl font-bold mb-6 tracking-wide border-b-2 border-gray-300 inline-block pb-2"> FW</h3>
-        <div className="grid md:grid-cols-2 gap-10 text-left max-w-4xl mx-auto mb-16">
+        <div className="grid md:grid-cols-2 gap-10 text-left max-w-4xl mx-auto mb-16 " data-aos="fade-up">
           <SkillItem
             icon={<FaLaravel className="text-5xl text-red-600" />}
             name="Laravel"
             stars={3}
-            description="LAMP環境構築を学ぶために使用しました。"
+            description="授業で学習。MDCモデルを理解し、実際に使用できる。"
           />
           <SkillItem
             icon={<FaVuejs className="text-5xl text-green-600" />}
             name="Vue.js"
             stars={2}
-            description="Webスクレイピングや定型作業自動化のために使用しています。FWについては独学中です。"
+            description="セキュリティコンテストに参加した際に独学で学習。実際に使用してサイト作成。"
+          />
+          <SkillItem
+            icon={<FaReact className="text-5xl" color="#61DAFB"  />}
+            name="React.js"
+            stars={4}
+            description="本サイトや、母の美容室サイトを作成した際に独学で学習。実際に使用してサイト作成"
           />
         </div>
 
         <h3 className="text-xl font-bold mb-6 tracking-wide border-b-2 border-gray-300 inline-block pb-2"> DB</h3>
-        <div className="grid md:grid-cols-2 gap-10 text-left max-w-4xl mx-auto mb-16">
+        <div className="grid md:grid-cols-2 gap-10 text-left max-w-4xl mx-auto mb-16" data-aos="fade-up">
           <SkillItem
-            icon={<FaDatabase className="text-5xl text-gray-700" />}
-            name="SQLServer"
+            icon={<SiFirebase className="text-5xl text-red-500" />}
+            name="Firebase"
             stars={3}
-            description="実務では主にSQLServerを使用していました。"
+            description="アプリ開発やwebサイト作成時は主にFirebaseを使用。"
           />
           <SkillItem
             icon={<FaDatabase className="text-5xl text-gray-700" />}
@@ -95,49 +112,49 @@ export default function Skills() {
         </div>
 
         <h3 className="text-xl font-bold mb-6 tracking-wide border-b-2 border-gray-300 inline-block pb-2"> CLOUD</h3>
-        <div className="grid md:grid-cols-1 gap-10 text-left max-w-4xl mx-auto mb-16">
+        <div className="grid md:grid-cols-1 gap-10 text-left max-w-4xl mx-auto mb-16" data-aos="fade-up">
           <SkillItem
             icon={<FaAws className="text-5xl text-orange-500" />}
             name="AWS"
-            stars={5}
-            description="VPCやEC2やCloudFormationなどによるクラウドインフラ構築が可能です。AWS認定全冠取得（SAP/DOP/ANS/MLS/DBS/SCS/SAA/SOA/DVA/DEA/MLA/AIF/CLF）。"
+            stars={2}
+            description="授業内で学習。実務経験なし。"
           />
         </div>
 
         <h3 className="text-xl font-bold mb-6 tracking-wide border-b-2 border-gray-300 inline-block pb-2"> INFRA</h3>
-        <div className="grid md:grid-cols-1 gap-10 text-left max-w-4xl mx-auto mb-16">
+        <div className="grid md:grid-cols-1 gap-10 text-left max-w-4xl mx-auto mb-16" data-aos="fade-up">
           <SkillItem
             icon={<FaDocker className="text-5xl text-indigo-600" />}
             name="Docker/Docker Compose"
             stars={2}
-            description="VPCやEC2やCloudFormationなどによるクラウドインフラ構築が可能です。AWS認定全冠取得（SAP/DOP/ANS/MLS/DBS/SCS/SAA/SOA/DVA/DEA/MLA/AIF/CLF）。"
+            description="セキュリティコンテストでネットワークを構築した際に少し使用。"
           />
         </div>
 
         <h3 className="text-xl font-bold mb-6 tracking-wide border-b-2 border-gray-300 inline-block pb-2">OS</h3>
-        <div className="grid md:grid-cols-1 gap-10 text-left max-w-4xl mx-auto mb-16">
+        <div className="grid md:grid-cols-1 gap-10 text-left max-w-4xl mx-auto mb-16" data-aos="fade-up">
           <SkillItem
             icon={<FaLinux className="text-5xl" />}
             name="Linux(centOS)"
             stars={3}
-            description="VPCやEC2やCloudFormationなどによるクラウドインフラ構築が可能です。AWS認定全冠取得（SAP/DOP/ANS/MLS/DBS/SCS/SAA/SOA/DVA/DEA/MLA/AIF/CLF）。"
+            description="インストールから環境設定、開発が可能。"
           />
 
           <SkillItem
             icon={<FaWindows className="text-5xl" />}
             name="Windows"
             stars={4}
-            description="VPCやEC2やCloudFormationなどによるクラウドインフラ構築が可能です。AWS認定全冠取得（SAP/DOP/ANS/MLS/DBS/SCS/SAA/SOA/DVA/DEA/MLA/AIF/CLF）。"
+            description="インストールから環境設定、開発が可能。開発では、Windows11を使用しています）。"
           />
         </div>
 
         <h3 className="text-xl font-bold mb-6 tracking-wide border-b-2 border-gray-300 inline-block pb-2">TOOL</h3>
-        <div className="grid md:grid-cols-1 gap-10 text-left max-w-4xl mx-auto mb-16">
+        <div className="grid md:grid-cols-1 gap-10 text-left max-w-4xl mx-auto mb-16" data-aos="fade-up">
           <SkillItem
             icon={<FaGithub className="text-5xl" />}
             name="GitHub"
-            stars={3}
-            description="VPCやEC2やCloudFormationなどによるクラウドインフラ構築が可能です。AWS認定全冠取得（SAP/DOP/ANS/MLS/DBS/SCS/SAA/SOA/DVA/DEA/MLA/AIF/CLF）。"
+            stars={5}
+            description="バージョン管理でよく使用されるため、独学しました。開発の際には全てGitを使用して管理。"
           />
         </div>
       </div>

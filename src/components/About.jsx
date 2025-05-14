@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import face from "../assets/images/face.jpg";
-import { FaTwitter, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF, FaLinkedinIn, FaGithub } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -14,7 +14,7 @@ export default function About() {
       className="min-h-screen flex flex-col items-center justify-center px-6 bg-gradient-to-b from-indigo-900 to-purple-900 text-white snap-start"
       id="about"
     >
-      <h2 className="text-4xl md:text-6xl font-semibold mb-6 font-serif tracking-wide">
+      <h2 className="text-4xl md:text-6xl font-semibold mt-3 mb-6 font-serif tracking-wide">
         About me
       </h2>
       <div className="max-w-6xl w-full flex flex-col md:flex-row justify-center items-center gap-12" >
@@ -28,8 +28,8 @@ export default function About() {
           <h3 className="text-xl font-bold">東流生</h3>
           <p className="text-gray-500 text-sm">学生</p>
           <div className="flex justify-center space-x-4 mt-4 text-gray-500" data-aos="fade-up">
-            <a href="#" className="hover:text-blue-500">
-              <FaTwitter />
+            <a href="https://github.com/" className="hover:text-blue-500">
+              <FaGithub />
             </a>
             <a href="#" className="hover:text-blue-700">
               <FaFacebookF />

@@ -8,19 +8,19 @@ import Projects from "./components/Projects";
 import About from "./components/About";
 import Footer from "./components/Footer";
 import AboutIntro from "./components/AboutIntro";
-import Loading from './components/Loading/Loading';
+// import Loading from './components/Loading/Loading';
 import Contact from './components/Contact';
 
 export default function App() {
-  const [loading, setLoading] = useState(true);
+  // const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    setTimeout(() => setLoading(false), 2500);
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => setLoading(false), 2500);
+  // }, []);
 
   return (
     <>
-      {loading ? <Loading /> : (
+      {/* {loading ? <Loading /> : ( */}
         <div className="font-sans text-gray-900 bg-black relative overflow-x-hidden">
           <SakuraCanvas />
           <Header />
@@ -44,7 +44,7 @@ export default function App() {
           </div>
           <Footer />
         </div>
-      )}
+      {/* )} */}
     </>
   );
 }

@@ -107,3 +107,130 @@ button:focus-visible {
 .animate-fadeInUp {
   animation: fadeInUp 0.4s ease-out both;
 }
+
+.scrollbar-thin {
+scrollbar-width: thin;
+scrollbar-color: #a78bfa transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+height: 8px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+background: transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+background-color: #a78bfa;
+border-radius: 8px;
+border: 2px solid transparent;
+background-clip: content-box;
+transition: background-color 0.3s ease;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+background-color: #7c3aed;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* components/Timeline/Timeline.css */
+.timeline-section {
+  background: #f8f8f8;
+  padding: 4rem 1rem 6rem;
+  text-align: center;
+}
+
+.timeline-title {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  font-family: 'Georgia', serif;
+}
+
+.timeline-track {
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  scroll-snap-type: x mandatory;
+  border-bottom: 2px solid #ccc;
+  position: relative;
+}
+
+.timeline-item {
+  flex: 0 0 220px;
+  position: relative;
+  scroll-snap-align: center;
+}
+
+.timeline-line {
+  width: 2px;
+  height: 120px;
+  background: #444;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.timeline-card {
+  background: #fff;
+  margin-top: 130px;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  text-align: left;
+  position: relative;
+}
+
+.timeline-card img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-card p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.timeline-year {
+  position: absolute;
+  top: -1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  padding: 0 0.5rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.timeline-scale {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  font-size: 0.8rem;
+  color: #888;
+  max-width: 900px;
+  margin: 0 auto;
+  border-top: 1px dashed #aaa;
+}
+
+.tick {
+  flex: 0 0 220px;
+  text-align: center;
+}

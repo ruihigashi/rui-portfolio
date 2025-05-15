@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import logo from "../assets/images/kina.jpg";
+import useTypewriter from "../hooks/useTypewriter";
 
 export default function Hero() {
   const controls = useAnimation();
@@ -15,6 +16,14 @@ export default function Hero() {
     hidden: { opacity: 0, y: 30 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.8 } }
   };
+
+  const nameTarget = " RUI HIGASHI";
+  const typedTarget = "ENGINEER PORTFOLIO.";
+
+  const name = useTypewriter(nameTarget, 100);
+  const typed = useTypewriter(typedTarget, 80);
+
+
 
   return (
     <section
@@ -30,12 +39,15 @@ export default function Hero() {
         <div className="flex flex-col items-center mb-4">
           <img src={logo} alt="Kina" className="w-20 h-20 rounded-full border-2 border-white mb-4" />
           <h1 className="text-5xl md:text-7xl font-light leading-tight tracking-wide">
-            RUI <span className="font-bold text-white">HIGASHI</span>
+            {name}
           </h1>
         </div>
-        <p className="mt-4 text-lg md:text-xl text-gray-400">
-          ENGINEER PORTFOLIO.
-        </p>
+        {name.length === nameTarget.length && (
+          <p className="mt-4 text-lg md:text-xl text-gray-400">
+            {typed}
+          </p>
+        )}
+
         {/* <div className="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
           <a
             href="#projects"

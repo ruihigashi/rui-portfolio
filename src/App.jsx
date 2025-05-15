@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 import AboutIntro from "./components/AboutIntro";
 // import Loading from './components/Loading/Loading';
 import Contact from './components/Contact';
+import Timeline from "./components/Story/Timeline";
 
 export default function App() {
   // const [loading, setLoading] = useState(true);
@@ -39,6 +40,9 @@ export default function App() {
           <div id="projects">
             <Projects />
           </div>
+          <div id="timeline">
+            <Timeline />
+          </div>          
           <div id="contact">
             <Contact />
           </div>

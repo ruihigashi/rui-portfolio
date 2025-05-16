@@ -30,9 +30,7 @@ export default function Projects() {
       description: (
         <>
           2024年に開催されたブロックチェーンを用いたビジネスモデル大会において、
-          <br />
           予約キャンセルの再利用をテーマにした「Passit」を発案し、特別賞を受賞しました。
-          <br />
           ブロックチェーンの利点である優れたデータの透明性とNFTがもつ様々な特性を掛け合わせ、
           予約の譲渡を可能にすることで予約キャンセルによる不利益を軽減しより多くの人に利益をもたらすことを目指しました。
         </>
@@ -40,11 +38,12 @@ export default function Projects() {
       image: passit,
       images: [passit, passit1, passit2, passit3, passit4],
       link: "https://protopedia.net/prototype/6737",
-      technology:
+      technology: (
         <>
           ブロックチェーン(Ethereum), スマートコントラクト(ERC-721),<br />
           Solidity, Ruby on Rails, Native, Flutter, Firebase, Firestore
         </>
+      )
     },
     {
       title: "ASMtool",
@@ -153,10 +152,7 @@ export default function Projects() {
             <div
               key={index}
               onClick={() => setSelectedProject(project)}
-              className="cursor-pointer bg-white text-black rounded-xl overflow-hidden shadow-md 
-                 transform transition duration-500 ease-in-out 
-                 hover:scale-105 hover:-translate-y-2 hover:shadow-2xl 
-                 w-[320px] h-[300px] flex flex-col"
+              className="cursor-pointer bg-white text-black rounded-xl overflow-hidden shadow-md transform transition duration-500 ease-in-out hover:scale-105 hover:-translate-y-2 hover:shadow-2xl w-[320px] h-[300px] flex flex-col"
             >
               <img
                 src={project.image}
@@ -175,13 +171,9 @@ export default function Projects() {
           ))}
         </div>
 
-
-
         {selectedProject && (
-          <div className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50">
-            <div className="bg-white text-black rounded-lg w-full max-w-4xl h-[90vh] overflow-y-auto p-8 relative shadow-2xl animate-fadeInUp flex flex-col md:flex-row gap-6 justify-center">
-
-
+          <div className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50 px-4">
+            <div className="bg-white text-black rounded-lg w-full max-w-4xl h-[90vh] overflow-y-auto p-8 shadow-2xl animate-fadeInUp relative">
               {/* Close Button */}
               <button
                 onClick={() => setSelectedProject(null)}
@@ -190,50 +182,42 @@ export default function Projects() {
                 ×
               </button>
 
-<div className="flex-1 flex flex-col justify-between">
-  {/* 上部：タイトルと説明文 */}
-  <div>
-    <h3 className="text-2xl font-bold mb-4 border-b pb-2">{selectedProject.title}</h3>
-    <p className="text-sm text-gray-700 leading-relaxed whitespace-pre-line mb-6">
-      {selectedProject.description}
-    </p>
-  </div>
+              <h3 className="text-2xl font-bold mb-4 border-b pb-2">{selectedProject.title}</h3>
 
-  <div className="space-y-3">
-    <a
-      href={selectedProject.link}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="inline-block text-blue-600 hover:underline text-sm font-medium"
-    >
-      🔗 Proto Pediaをみる
-    </a>
-    <div>
-      <h4 className="font-semibold text-gray-800 mb-2 border-b pb-2">使用言語など</h4>
-      <p className="text-sm text-gray-600">{selectedProject.technology}</p>
-    </div>
-  </div>
-</div>
+              <div className="flex flex-col md:flex-row gap-8 justify-center items-start">
+                {/* 左側：説明とリンク */}
+                <div className="flex-1 min-w-[280px]">
+                  <p className="text-sm text-gray-700 leading-snug line-clamp-10 mb-4 min-h-[11rem]">
+                    {selectedProject.description}
+                  </p>
+                  <a
+                    href={selectedProject.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block text-blue-600 hover:underline text-sm font-medium mb-4"
+                  >
+                    🔗 Proto Pediaをみる
+                  </a>
+                  <div>
+                    <h4 className="font-semibold text-gray-800 mb-2 border-b pb-2">使用言語など</h4>
+                    <p className="text-sm text-gray-600">{selectedProject.technology}</p>
+                  </div>
+                </div>
 
-              <div className="flex-1 flex flex-col justify-center ">
-                {/* メイン画像 */}
-                <img
-                  src={selectedImage}
-                  alt={selectedProject.title}
-                  className="rounded-md w-full h-auto max-h-[300px] object-contain mb-4 border shadow-md"
-                />
-
-                {/* サムネイル画像（横並び） */}
-                <div className="relative">
+                {/* 右側：画像 */}
+                <div className="flex-1 flex flex-col items-center">
+                  <img
+                    src={selectedImage}
+                    alt={selectedProject.title}
+                    className="rounded-md w-full h-auto max-h-[300px] object-contain mb-4 border shadow-md"
+                  />
                   <div className="flex gap-2 overflow-x-auto scrollbar-thin scrollbar-thumb-indigo-400 scrollbar-track-gray-100 pt-2">
                     {(selectedProject.images || [selectedProject.image]).map((img, idx) => (
                       <img
                         key={idx}
                         src={img}
                         onClick={() => setSelectedImage(img)}
-                        className={`w-24 h-16 object-contain bg-white rounded shadow-sm cursor-pointer border ml-1 mb-1 ${img === selectedImage ? "ring-2 ring-indigo-500" : ""
-                          }`}
-                        style={{ boxSizing: 'content-box' }}
+                        className={`w-24 h-16 object-contain bg-white rounded shadow-sm cursor-pointer border ml-1 mb-1 ${img === selectedImage ? "ring-2 ring-indigo-500" : ""}`}
                       />
                     ))}
                   </div>

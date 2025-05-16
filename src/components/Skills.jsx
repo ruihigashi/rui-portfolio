@@ -16,9 +16,9 @@ export default function Skills() {
 
   return (
     <section className="py-20 px-4 bg-white text-black" id="skills">
-      <div className="max-w-5xl mx-auto text-center" data-aos="fade-up">
+      <div className="max-w-5xl mx-auto text-center" >
         <h2 className="text-4xl md:text-6xl font-semibold mb-6 font-serif tracking-wide">SKILL</h2>
-        <p className="text-gray-600 mt-4 text-sm md:text-base leading-relaxed">
+        <p className="text-gray-600 mt-4 text-sm md:text-base leading-relaxed" data-aos="fade-up">
           私の現在のスキルを8つの項目に分けてグラフィカルにまとめました。<br />
           開発では主にフロントエンドを担当し、広く浅くではありますがバックエンドの開発にも携わってきました。<br />
           今後はバックエンド系の開発（クラウド含む）にも力をいれ、オールラウンドに対応できるエンジニアになりたいと考えています。<br />

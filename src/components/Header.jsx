@@ -16,8 +16,9 @@ export default function Header() {
                 </div>
                 <ul className="flex space-x-6 text-sm">
                     <li className="cursor-pointer hover:text-pink-400" onClick={() => scrollToSection("aboutIntro")}>About</li>
+                    <li className="cursor-pointer hover:text-pink-400" onClick={() => scrollToSection("profile")}>Profile</li>
                     <li className="cursor-pointer hover:text-pink-400" onClick={() => scrollToSection("skills")}>Skills</li>
-                    <li className="cursor-pointer hover:text-pink-400" onClick={() => scrollToSection("projects")}>Output</li>
+                    <li className="cursor-pointer hover:text-pink-400" onClick={() => scrollToSection("output")}>Output</li>
                     <li className="cursor-pointer hover:text-pink-400" onClick={() => scrollToSection("history")}>History</li>
                     <li className="cursor-pointer hover:text-pink-400" onClick={() => scrollToSection("contact")}>Contact</li>
                 </ul>

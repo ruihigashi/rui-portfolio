@@ -84,7 +84,7 @@ export default function RadarChart() {
                 <SkillLevel stars={1} text="触ったことあり" />
                 <SkillLevel stars={2} text="楽しめる" />
                 <SkillLevel stars={3} text="理解してきた" />
-                <SkillLevel stars={4} text="成果物作成の際に使用" />
+                <SkillLevel stars={4} text="" />
                 <SkillLevel stars={5} text="実務経験あり" />
             </div>
         </div>

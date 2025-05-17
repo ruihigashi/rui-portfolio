@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import face from "../assets/images/face.jpg";
+import protopediaicon from "../assets/images/protopediaicon.jpg";
 import { FaFacebookF, FaLinkedinIn, FaGithub } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -34,7 +35,7 @@ export default function About() {
               <FaGithub />
             </a>
             <a href="https://protopedia.net/prototyper/rui0421" className="hover:text-blue-700">
-              <FaFacebookF />
+                <img src={protopediaicon} alt="ProtoPedia" className="text-contain w-13 h-4" />
             </a>
           </div>
         </div>

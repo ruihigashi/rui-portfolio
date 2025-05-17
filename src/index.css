@@ -110,7 +110,8 @@ button:focus-visible {
 
 .scrollbar-thin {
 scrollbar-width: thin;
-scrollbar-color: #a78bfa transparent;
+scrollbar-color: #a78bfa #18181b
+;
 }
 
 .scrollbar-thin::-webkit-scrollbar {
@@ -118,7 +119,7 @@ height: 8px;
 }
 
 .scrollbar-thin::-webkit-scrollbar-track {
-background: transparent;
+background: #ffffff;
 }
 
 .scrollbar-thin::-webkit-scrollbar-thumb {

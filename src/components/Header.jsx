@@ -8,7 +8,7 @@ export default function Header() {
     };
 
     return (
-        <header className="fixed top-0 left-0 w-full z-50 bg-black bg-opacity-80 backdrop-blur-sm shadow-md">
+        <header className="fixed top-0 left-0 w-full z-50 bg-opacity-80 backdrop-blur-sm shadow-md bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 font-semibold">
             <nav className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center text-white">
                 <div className="flex items-center space-x-3 cursor-pointer" onClick={() => scrollToSection("hero")}>
                     <img src={logo} alt="logo" className="w-8 h-8 rounded-full" />

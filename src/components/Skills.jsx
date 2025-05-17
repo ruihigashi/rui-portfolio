@@ -15,33 +15,39 @@ export default function Skills() {
   }, []);
 
   return (
-    <section className="py-20 px-4 bg-white text-black" id="skills">
-      <div className="max-w-5xl mx-auto text-center" >
-        <h2 className="text-4xl md:text-6xl font-semibold mb-6 font-serif tracking-wide">SKILL</h2>
-        <p className="text-gray-600 mt-4 text-sm md:text-base leading-relaxed" data-aos="fade-up">
-          私の現在のスキルを8つの項目に分けてグラフィカルにまとめました。<br />
-          開発では主にフロントエンドを担当し、広く浅くではありますがバックエンドの開発にも携わってきました。<br />
-          今後はバックエンド系の開発（クラウド含む）にも力をいれ、オールラウンドに対応できるエンジニアになりたいと考えています。<br />
-          エンジニアとしてはまだまだ未熟者ではありますが今現在のスキルがどれくらいかが伝われば幸いです。<br />
-          <br />
-          ※授業やハッカソンの開発等で実際に使用した技術のみ掲載しております。
-        </p>
+    <section className="py-20 px-4 bg-zinc-900 text-white" id="skills">
+  <div className="max-w-5xl mx-auto text-center">
+    <h2 className="text-4xl md:text-6xl font-semibold mb-6 font-serif tracking-wide">SKILL</h2>
+    <p className="text-gray-300 mt-4 text-sm md:text-base leading-relaxed" data-aos="fade-up">
+      私の現在のスキルを8つの項目に分けてグラフィカルにまとめました。<br />
+      開発では主にフロントエンドを担当し、広く浅くではありますがバックエンドの開発にも携わってきました。<br />
+      今後はバックエンド系の開発（クラウド含む）にも力をいれ、オールラウンドに対応できるエンジニアになりたいと考えています。<br />
+      エンジニアとしてはまだまだ未熟者ではありますが今現在のスキルがどれくらいかが伝われば幸いです。<br />
+      <br />
+      ※授業やハッカソンの開発等で実際に使用した技術のみ掲載しております。
+    </p>
 
-        <div className="my-12" data-aos="fade-up">
-          <RadarChart />
-        </div>
+    <div className="my-12" data-aos="fade-up">
+      <RadarChart />
+    </div>
 
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          className="mx-auto mt-4 flex items-center justify-center text-blue-600 hover:text-blue-800 focus:outline-none bg-white bg-opacity-50 px-4 py-2 rounded-full border border-blue-300"
-        >
-          <span className="mr-2 font-medium text-sm">{isOpen ? '閉じる' : 'もっと見る'}</span>
-          {isOpen ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
-        </button>
+    {!isOpen && (
+      <button
+        onClick={() => {
+          setIsOpen(true);
+          setTimeout(() => {
+            document.getElementById("skill-details")?.scrollIntoView({ behavior: "smooth" });
+          }, 100);
+        }}
+        className="mx-auto mt-4 flex items-center justify-center text-white bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 px-6 py-2 rounded-full font-semibold shadow-md transition-all duration-300"
+      >
+        もっと見る
+      </button>
+    )}
 
-        {isOpen && (
-          <div className="mt-10 space-y-16" >
-            <SkillSection title="FRONT-END">
+    {isOpen && (
+      <div className="mt-10 space-y-16" id="skill-details">
+        <SkillSection title="FRONT-END">
               <div data-aos="fade-up">
                 <SkillItem icon={<FaHtml5 className="text-5xl text-orange-500" data-aos="fade-up" />} name="HTML5" stars={4} description="授業等で学習し、ＥＣサイトを作成した際に使用。" />
                 <SkillItem icon={<FaCss3Alt className="text-5xl text-blue-500" data-aos="fade-up" />} name="CSS3" stars={4} description="授業等で学習し、ＥＣサイトを作成した際に使用。" />
@@ -96,10 +102,23 @@ export default function Skills() {
                 <SkillItem icon={<FaGithub className="text-5xl" />} name="GitHub" stars={5} description="バージョン管理でよく使用されるため、独学しました。開発の際には全てGitを使用して管理。" />
               </div>
             </SkillSection>
-          </div>
-        )}
+        <div className="text-center">
+          <button
+            onClick={() => {
+              setIsOpen(false);
+              setTimeout(() => {
+                document.querySelector("#skills button")?.scrollIntoView({ behavior: "smooth" });
+              }, 100);
+            }}
+            className="mx-auto mt-4 flex items-center justify-center text-white bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 px-6 py-2 rounded-full font-semibold shadow-md transition-all duration-300"
+          >
+            閉じる
+          </button>
+        </div>
       </div>
-    </section>
+    )}
+  </div>
+</section>      
   );
 }
 
@@ -131,7 +150,7 @@ function SkillItem({ icon, name, stars, description }) {
             />
           ))}
         </div>
-        <p className="text-sm text-gray-700">{description}</p>
+        <p className="text-sm text-gray-300">{description}</p>
       </div>
     </div>
   );

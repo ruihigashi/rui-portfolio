@@ -178,16 +178,16 @@ export default function Projects() {
   ];
 
   return (
-    <section className="min-h-screen py-16 px-4 bg-gray-100 text-gray-900 snap-start" id="projects">
+    <section className="min-h-screen py-16 px-4 snap-start text-white" id="projects">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl md:text-6xl font-semibold text-center mb-6 font-serif tracking-wide">
           OUTPUT
         </h2>
-        <p className="text-center text-gray-500 max-w-2xl mx-auto mt-4 mb-10 text-sm md:text-base leading-relaxed" data-aos="fade-up">
+        <p className="text-center text-gray-300 max-w-2xl mx-auto mt-4 mb-10 text-sm md:text-base leading-relaxed" data-aos="fade-up">
           下記はこれまでハッカソン等の様々なコンテストに提出した成果物です。
         </p>
 
-        <div className="flex flex-wrap justify-center gap-x-6 gap-y-5">
+        <div className="flex flex-wrap justify-center gap-x-6 gap-y-5 ">
           {projects.map((project, index) => (
             <div
               key={index}

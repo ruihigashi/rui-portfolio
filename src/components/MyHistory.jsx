@@ -124,9 +124,9 @@ export default function StoryTimeline() {
   }, []);
 
   return (
-    <section className="bg-white py-16 px-4" id="timeline">
+    <section className="bg-zinc-900 text-white py-16 px-4" id="timeline">
       <h2 className="text-4xl md:text-6xl font-semibold text-center mb-6 font-serif tracking-wide">My History</h2>
-      <p className="text-center text-gray-500 max-w-2xl mx-auto mt-4 mb-6 text-sm md:text-base leading-relaxed" data-aos="fade-up">
+      <p className="text-center text-gray-300 max-w-2xl mx-auto mt-4 mb-6 text-sm md:text-base leading-relaxed" data-aos="fade-up">
         専門学校入学から現在までの経歴を時系列でまとめてます。横にスクロールしながらご覧ください。
       </p>
 
@@ -140,7 +140,7 @@ export default function StoryTimeline() {
             >
               <div className="bg-white rounded-full border-4 border-gray-300 shadow-xl px-6 py-8 w-[300px] min-h-[320px] flex flex-col items-center">
                 {/* 年 */}
-                <div className="text-sm text-indigo-800 px-3 py-1 rounded-full font-semibold mb-3">
+                <div className="text-sm text-indigo-800 px-3 py-1 rounded-full font-semibold mb-5">
                   {item.year}
                 </div>
 
@@ -148,12 +148,12 @@ export default function StoryTimeline() {
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="w-30 h-24 object-cover border mb-3"
+                  className="w-30 h-24 object-cover border"
                 />
 
                 {/* タイトルと説明 */}
                 <h3 className="text-lg font-bold mb-2 text-center">{item.title}</h3>
-                <p className="text-sm text-gray-600 text-center leading-normal">
+                <p className="text-sm text-gray-900 text-center leading-normal">
                   {item.description}
                 </p>
               </div>

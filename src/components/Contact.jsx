@@ -1,61 +1,57 @@
 import React from "react";
+import emailjs from "emailjs-com";
 
 export default function Contact() {
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      "service_l4glzs4",      
+      "template_r9vb0lt",     // テンプレートID
+      e.target,
+      "Dbuz78ilxoPjzWuyy"          // 公開キー（EmailJSのアカウントから取得）
+    ).then(
+      (result) => {
+        alert("送信が完了しました！");
+      },
+      (error) => {
+        alert("送信に失敗しました。");
+        console.error(error.text);
+      }
+    );
+
+    e.target.reset(); // フォームリセット
+  };
+
   return (
-    <section className="min-h-screen py-20 px-6 bg-gray-50 text-gray-800 snap-start" id="contact">
+    <section id="contact" className="min-h-screen py-20 px-6 bg-zinc-900 text-white snap-start">
       <div className="max-w-3xl mx-auto text-center">
-        <h2 className="text-4xl md:text-6xl font-semibold text-center mb-6 font-serif tracking-wide">CONTACT</h2>
-        <p className="text-center text-gray-500 max-w-2xl mx-auto mt-4 mb-10 text-sm md:text-base leading-relaxed" data-aos="fade-up">
-          最後までご覧いただきありがとうございました！<br />
-          このサイトを通して、私のことを少しでも知っていただけたのなら嬉しいです。<br />
-          もしこのサイトや私について何かコメントがありましたら、下記フォームをご利用ください。
+        <h2 className="text-4xl md:text-6xl font-semibold mb-6 font-serif tracking-wide">CONTACT</h2>
+        <p className="text-gray-300 mb-10 text-sm md:text-base leading-relaxed">
+          最後までご覧いただきありがとうございます。コメントがあればお気軽にどうぞ！
         </p>
 
-        <form className="space-y-6 text-left max-w-2xl mx-auto" data-aos="fade-up">
+        <form onSubmit={sendEmail} className="space-y-6 text-left max-w-2xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
-              <label htmlFor="name" className="block text-sm font-semibold text-[#7c3aed] mb-1">名前</label>
-              <input
-                id="name"
-                name="name"
-                type="text"
-                required
-                className="w-full bg-white text-gray-800 border-b-2 border-gray-300 rounded focus:outline-none focus:border-teal-500 py-2 px-3"
-              />
+              <label className="block text-sm font-semibold text-[#7c3aed] mb-1">名前</label>
+              <input type="text" name="name" required className="w-full bg-white text-gray-800 py-2 px-3 rounded border-b-2 border-gray-300" />
             </div>
             <div>
-              <label htmlFor="email" className="block text-sm font-semibold text-[#7c3aed] mb-1">メールアドレス</label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                required
-                className="w-full bg-white text-gray-800 border-b-2 border-gray-300 rounded focus:outline-none focus:border-teal-500 py-2 px-3"
-              />
+              <label className="block text-sm font-semibold text-[#7c3aed] mb-1">メールアドレス</label>
+              <input type="email" name="email" required className="w-full bg-white text-gray-800 py-2 px-3 rounded border-b-2 border-gray-300" />
             </div>
           </div>
-
           <div>
-            <label htmlFor="comment" className="block text-sm font-semibold text-[#7c3aed] mb-1">コメント</label>
-            <textarea
-              id="comment"
-              name="comment"
-              rows="5"
-              required
-              className="w-full bg-white text-gray-800 border-b-2 border-gray-300 rounded focus:outline-none focus:border-teal-500 py-2 px-3"
-            />
+            <label className="block text-sm font-semibold text-[#7c3aed] mb-1">コメント</label>
+            <textarea name="message" rows="5" required className="w-full bg-white text-gray-800 py-2 px-3 rounded border-b-2 border-gray-300"></textarea>
           </div>
-
           <div className="text-center mt-8">
-            <button
-              type="submit"
-              className="bg-teal-500 text-white px-8 py-3 rounded hover:bg-teal-600 transition duration-300"
-            >
+            <button type="submit" className="bg-[#7c3aed] text-white px-8 py-3 rounded hover:bg-purple-700 transition">
               SEND
             </button>
           </div>
         </form>
-
       </div>
     </section>
   );

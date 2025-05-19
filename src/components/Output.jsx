@@ -158,23 +158,6 @@ export default function Projects() {
       link: "https://protopedia.net/prototype/6742",
       technology: "Flutter, Firebase Authentication, vision API, translation API"
     },
-    {
-      title: "Healpass",
-      shortDescription: "a",
-      description: (
-        <>
-          2024年に開催されたブロックチェーンを用いたビジネスモデル大会において、
-          <br />
-          予約キャンセルの再利用をテーマにした「Passit」を開発し、特別賞を受賞しました。
-          <br />
-          チームで企画立案からプロトタイプまで短期間で構築しました。
-        </>
-      ),
-      image: healpass,
-      images: [],
-      link: "https://protopedia.net/prototype/6090",
-      technology: ""
-    },
   ];
 
   return (

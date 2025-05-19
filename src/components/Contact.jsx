@@ -24,7 +24,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="min-h-screen py-20 px-6 bg-zinc-900 text-white snap-start">
+    <section id="contact" className="min-h-screen py-20 px-6 text-white snap-start">
       <div className="max-w-3xl mx-auto text-center">
         <h2 className="text-4xl md:text-6xl font-semibold mb-6 font-serif tracking-wide">CONTACT</h2>
         <p className="text-gray-300 mb-10 text-sm md:text-base leading-relaxed">

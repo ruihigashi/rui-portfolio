@@ -18,7 +18,7 @@ export default function Skills() {
     <section className="bg-[url('/home/rui0421/rui-portfolio/src/assets/images/leather.jpg')] py-20 px-4 bg-zinc-900 text-white" id="skills">
   <div className="max-w-5xl mx-auto text-center">
     <h2 className="text-4xl md:text-6xl font-semibold mb-6 font-serif tracking-wide">SKILL</h2>
-    <p className="text-gray-300 mt-4 text-sm md:text-base leading-relaxed" data-aos="fade-up">
+    <p className="text-gray-300 mt-4 text-sm md:text-base leading-relaxed" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
       私の現在のスキルを8つの項目に分けて<br />グラフィカルにまとめました。<br />
       開発では主にフロントエンドを担当し、広く浅くでは<br />ありますがバックエンドの開発にも携わってきました。<br />
       今後はバックエンド系の開発（クラウド含む）にも<br/>力をいれ、オールラウンドに対応できるエンジニアになりたいと考えています。<br />
@@ -27,7 +27,7 @@ export default function Skills() {
       ※授業やハッカソンの開発等で実際に使用した技術のみ掲載しております。
     </p>
 
-    <div className="my-12" data-aos="fade-up">
+    <div className="my-12" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
       <RadarChart />
     </div>
 
@@ -48,7 +48,7 @@ export default function Skills() {
     {isOpen && (
       <div className="mt-10 space-y-16" id="skill-details">
         <SkillSection title="FRONT-END">
-              <div data-aos="fade-up">
+              <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
                 <SkillItem icon={<FaHtml5 className="text-5xl text-orange-500" data-aos="fade-up" />} name="HTML5" stars={4} description="授業等で学習し、ＥＣサイトを作成した際に使用。" />
                 <SkillItem icon={<FaCss3Alt className="text-5xl text-blue-500" data-aos="fade-up" />} name="CSS3" stars={4} description="授業等で学習し、ＥＣサイトを作成した際に使用。" />
                 <SkillItem icon={<FaJsSquare className="text-5xl text-yellow-500" />} name="JavaScript" stars={3} description="JavaScriptを使って動的なUIの実装に挑戦中。" />
@@ -56,7 +56,7 @@ export default function Skills() {
             </SkillSection>
 
             <SkillSection title="BACK-END">
-              <div data-aos="fade-up">
+              <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
                 <SkillItem icon={<FaJava className="text-5xl text-red-600" />} name="Java" stars={3} description="授業等でJavaを通してオブジェクト指向を学習し、開発環境ではEclipseを使用しました。" />
                 <SkillItem icon={<FaPhp className="text-5xl text-indigo-600" />} name="PHP" stars={3} description="授業等でPHPを学習し、活用してwebサイトを作成。" />
                 <SkillItem icon={<FaPython className="text-5xl text-yellow-600" />} name="Python" stars={3} description="セキュリティコンテストに参加した際に少し使用。独学で学習中。" />
@@ -64,7 +64,7 @@ export default function Skills() {
             </SkillSection>
 
             <SkillSection title="FW">
-              <div data-aos="fade-up">
+              <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
                 <SkillItem icon={<FaLaravel className="text-5xl text-red-600" />} name="Laravel" stars={3} description="授業で学習。MDCモデルを理解し、実際に使用できる。" />
                 <SkillItem icon={<FaVuejs className="text-5xl text-green-600" />} name="Vue.js" stars={2} description="セキュリティコンテストに参加した際に独学で学習。実際に使用してサイト作成。" />
                 <SkillItem icon={<FaReact className="text-5xl" color="#61DAFB" />} name="React.js" stars={4} description="本サイトや、母の美容室サイトを作成した際に独学で学習。実際に使用してサイト作成。" />
@@ -72,33 +72,33 @@ export default function Skills() {
             </SkillSection>
 
             <SkillSection title="DB">
-              <div data-aos="fade-up">
+              <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
                 <SkillItem icon={<SiFirebase className="text-5xl text-red-500" />} name="Firebase" stars={3} description="アプリ開発やwebサイト作成時は主にFirebaseを使用。" />
                 <SkillItem icon={<FaDatabase className="text-5xl text-gray-700" />} name="MySQL" stars={3} description="LAMP環境構築を学ぶために使用しました。" />
               </div>
             </SkillSection>
 
             <SkillSection title="CLOUD">
-              <div data-aos="fade-up">
+              <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
                 <SkillItem icon={<FaAws className="text-5xl text-orange-500" />} name="AWS" stars={2} description="授業内で学習。実務経験なし。" />
               </div>
             </SkillSection>
 
             <SkillSection title="INFRA">
-              <div data-aos="fade-up">
+              <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
                 <SkillItem icon={<FaDocker className="text-5xl text-indigo-600" />} name="Docker/Docker Compose" stars={2} description="セキュリティコンテストでネットワークを構築した際に少し使用。" />
               </div>
             </SkillSection>
 
             <SkillSection title="OS">
-              <div data-aos="fade-up">
+              <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
                 <SkillItem icon={<FaLinux className="text-5xl" />} name="Linux(centOS)" stars={3} description="インストールから環境設定、開発が可能。" />
                 <SkillItem icon={<FaWindows className="text-5xl" />} name="Windows" stars={4} description="インストールから環境設定、開発が可能。開発では、Windows11を使用しています）。" />
               </div>
             </SkillSection>
 
             <SkillSection title="TOOL">
-              <div data-aos="fade-up">
+              <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
                 <SkillItem icon={<FaGithub className="text-5xl" />} name="GitHub" stars={5} description="バージョン管理でよく使用されるため、独学しました。開発の際には全てGitを使用して管理。" />
               </div>
             </SkillSection>

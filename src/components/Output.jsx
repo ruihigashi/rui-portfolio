@@ -166,7 +166,7 @@ export default function Projects() {
         <h2 className="text-4xl md:text-6xl font-semibold text-center mb-6 font-serif tracking-wide">
           OUTPUT
         </h2>
-        <p className="text-center text-gray-300 max-w-2xl mx-auto mt-4 mb-10 text-sm md:text-base leading-relaxed" data-aos="fade-up">
+        <p className="text-center text-gray-300 max-w-2xl mx-auto mt-4 mb-10 text-sm md:text-base leading-relaxed" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
           下記はこれまでハッカソン等の様々なコンテストに提出した成果物です。
         </p>
 

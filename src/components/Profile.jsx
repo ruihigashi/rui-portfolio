@@ -21,7 +21,7 @@ export default function About() {
       <div className="max-w-6xl w-full flex flex-col md:flex-row justify-center items-center gap-12 px-4 md:px-8 lg:px-12 xl:px-20" >
 
         {/* Profile Card */}
-        <div className="bg-white rounded-xl shadow-lg px-6 py-10 text-center text-gray-900 w-full max-w-[280px] h-[300px] flex flex-col justify-start" data-aos="fade-up">
+        <div className="bg-white rounded-xl shadow-lg px-6 py-10 text-center text-gray-900 w-full max-w-[280px] h-[300px] flex flex-col justify-start" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
 
           <img
             src={logo}

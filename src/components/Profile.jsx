@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import face from "../assets/images/face.jpg";
 import protopediaicon from "../assets/images/protopediaicon.jpg";
 import { FaFacebookF, FaLinkedinIn, FaGithub } from "react-icons/fa";
+  import logo from "../assets/images/kina.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -24,7 +24,7 @@ export default function About() {
         <div className="bg-white rounded-xl shadow-lg px-6 py-10 text-center text-gray-900 w-full max-w-[280px] h-[300px] flex flex-col justify-start" data-aos="fade-up">
 
           <img
-            src={face}
+            src={logo}
             alt="Profile"
             className="w-32 h-32 mx-auto rounded-full object-cover mb-4"
           />

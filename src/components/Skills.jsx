@@ -15,13 +15,13 @@ export default function Skills() {
   }, []);
 
   return (
-    <section className="py-20 px-4 bg-zinc-900 text-white" id="skills">
+    <section className="bg-[url('/home/rui0421/rui-portfolio/src/assets/images/leather.jpg')] py-20 px-4 bg-zinc-900 text-white" id="skills">
   <div className="max-w-5xl mx-auto text-center">
     <h2 className="text-4xl md:text-6xl font-semibold mb-6 font-serif tracking-wide">SKILL</h2>
     <p className="text-gray-300 mt-4 text-sm md:text-base leading-relaxed" data-aos="fade-up">
-      私の現在のスキルを8つの項目に分けてグラフィカルにまとめました。<br />
-      開発では主にフロントエンドを担当し、広く浅くではありますがバックエンドの開発にも携わってきました。<br />
-      今後はバックエンド系の開発（クラウド含む）にも力をいれ、オールラウンドに対応できるエンジニアになりたいと考えています。<br />
+      私の現在のスキルを8つの項目に分けて<br />グラフィカルにまとめました。<br />
+      開発では主にフロントエンドを担当し、広く浅くでは<br />ありますがバックエンドの開発にも携わってきました。<br />
+      今後はバックエンド系の開発（クラウド含む）にも<br/>力をいれ、オールラウンドに対応できるエンジニアになりたいと考えています。<br />
       エンジニアとしてはまだまだ未熟者ではありますが今現在のスキルがどれくらいかが伝われば幸いです。<br />
       <br />
       ※授業やハッカソンの開発等で実際に使用した技術のみ掲載しております。

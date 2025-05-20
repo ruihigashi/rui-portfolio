@@ -1,7 +1,7 @@
   import React, { useEffect } from "react";
   import { motion, useAnimation } from "framer-motion";
   import { useInView } from "react-intersection-observer";
-  import logo from "../assets/images/kina.jpg";
+  import logo from "../assets/images/higashi.jpg";
 
   export default function Hero() {
     const controls = useAnimation();

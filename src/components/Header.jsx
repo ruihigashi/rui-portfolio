@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../assets/images/kina.jpg";
+import logo from "../assets/images/higashi.jpg";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 export default function Header() {

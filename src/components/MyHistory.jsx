@@ -11,7 +11,7 @@ import award2 from "../assets/images/EDD.jpg"
 import award3 from "../assets/images/charekyara.jpg"
 import award4 from "../assets/images/MBSD.jpg"
 import award5 from "../assets/images/giikuhaku.jpg"
-import toeic from "../assets/images/toeic.jpg"
+import myPortfolio from "../assets/images/myPortfolio.jpg"
 
 const timelineData = [
   {
@@ -39,7 +39,7 @@ const timelineData = [
     title: "プログラミングにはまる",
     description:
       <>
-        授業で学ぶ言語に加え、<br />
+        授業で学ぶプログラミング言語に加え、<br />
         独学で様々な言語に触れる。
       </>,
     image: study,
@@ -108,13 +108,14 @@ const timelineData = [
   },
   {
     year: "2025年1月~現在",
-    title: "ハッカソン活動継続・資格勉強",
+    title: "個人開発と資格勉強",
     description: <>
-      現在はハッカソン活動を継続しつつ、<br />
-      TOEICや応用情報技術者試験<br />
-      などの勉強を行っています。
+      現在は個人開発に力を入れており<br />
+      自身のポートフォリオサイトや<br />
+      母が営む美容室のサイトを作成し<br />
+      保守・運用を行っております。<br />
     </>,
-    image: toeic,
+    image: myPortfolio,
   },
 ];
 

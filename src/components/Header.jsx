@@ -35,7 +35,7 @@ export default function Header() {
             onClick={() => scrollToSection("hero")}
           >
             <img src={logo} alt="logo" className="w-8 h-8 rounded-full" />
-            <h1 className="text-lg font-bold hidden md:inline">Kina</h1>
+            <h1 className="text-lg font-bold hidden md:inline">Rui</h1>
           </div>
 
           {/* PC用ナビゲーション */}

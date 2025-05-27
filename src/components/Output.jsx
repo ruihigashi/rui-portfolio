@@ -30,6 +30,13 @@ import scanry6 from "../assets/images/Scanry/scanry6.jpg";
 import scanry7 from "../assets/images/Scanry/scanry7.jpg";
 import scanry8 from "../assets/images/Scanry/scanry8.jpg";
 import scanry9 from "../assets/images/Scanry/scanry9.jpg";
+import luana from "../assets/images/LUANA/luana.jpg";
+import luana1 from "../assets/images/LUANA/luana1.jpg";
+import luana2 from "../assets/images/LUANA/luana2.jpg";
+import luana3 from "../assets/images/LUANA/luana3.jpg";
+import luana4 from "../assets/images/LUANA/luana4.jpg";
+import luana5 from "../assets/images/LUANA/luana5.jpg";
+import luana6 from "../assets/images/LUANA/luana6.jpg";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -158,6 +165,27 @@ export default function Projects() {
       link: "https://protopedia.net/prototype/6742",
       technology: "Flutter, Firebase Authentication, vision API, translation API"
     },
+    {
+      title: "LUANA",
+      shortDescription: "React.jsとTypeScript.jsで作成した美容室サイト。\n実際にwebにあげて誰でも閲覧可能にしており、\n予約サイトと管理者サイトも別で作成済み。",
+      description: (
+        <>
+          このサイトは、母が経営する美容室のために個人開発した予約管理サイトです。
+          <br />
+          お客様が簡単にメニューやマップを確認でき、オンラインでスムーズに予約ができるよう設計しています。
+          <br />
+          また、美容室側も予約状況やお客様の情報を管理しやすいように、シンプルで使いやすい管理画面を実装しました。
+          <br />
+          デザインやフロントエンドの実装、さらにログイン機能まで全て一人で担当し、実際に母と相談しながら細かな使い勝手や見やすさにもこだわりました。
+          <br />
+          このサイトは、家族のために自分の力を活かして形にした、私にとって一番思い入れのある作品です。
+        </>
+      ),
+      image: luana,
+      images: [luana, luana1, luana2, luana3, luana4, luana5, luana6],
+      link: "https://luana-s-miruto.com/",
+      technology: "React.js, TypeScript.js, spabase,"
+    },
   ];
 
   return (
@@ -167,7 +195,7 @@ export default function Projects() {
           OUTPUT
         </h2>
         <p className="text-center text-gray-300 max-w-2xl mx-auto mt-4 mb-10 text-sm md:text-base leading-relaxed" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
-          下記はこれまでハッカソン等の様々なコンテストに提出した成果物です。
+          下記はこれまでハッカソン等の様々なコンテストや個人で開発した成果物です。
         </p>
 
         <div className="flex flex-wrap justify-center gap-x-6 gap-y-5 ">
@@ -219,7 +247,7 @@ export default function Projects() {
                     rel="noopener noreferrer"
                     className="inline-block text-blue-600 hover:underline text-sm font-medium mb-4"
                   >
-                    🔗 Proto Pediaをみる
+                    🔗 外部リンクを開く
                   </a>
                   <div>
                     <h4 className="font-semibold text-gray-800 mb-2 border-b pb-2">使用言語など</h4>

@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import protopediaicon from "../assets/images/protopediaicon.jpg";
 import { FaFacebookF, FaLinkedinIn, FaGithub } from "react-icons/fa";
-  import logo from "../assets/images/higashi.jpg";
+import logo from "../assets/images/higashi.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 

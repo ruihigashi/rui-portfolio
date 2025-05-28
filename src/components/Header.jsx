@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import logo from "../assets/images/higashi.jpg";
 import { FaBars, FaTimes } from "react-icons/fa";
 

@@ -1,5 +1,4 @@
-// components/SakuraCanvas.jsx
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 
 export default function SakuraCanvas() {
   const canvasRef = useRef(null);

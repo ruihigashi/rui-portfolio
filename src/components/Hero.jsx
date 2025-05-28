@@ -1,4 +1,4 @@
-  import React, { useEffect } from "react";
+  import { useEffect } from "react";
   import { motion, useAnimation } from "framer-motion";
   import { useInView } from "react-intersection-observer";
   import logo from "../assets/images/higashi.jpg";

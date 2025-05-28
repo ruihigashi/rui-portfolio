@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from "react";
 import "./index.css";
 import SakuraCanvas from "./components/SakuraCanvas";
 import Header from "./components/Header";

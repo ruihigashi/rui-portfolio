@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import passit from "../assets/images/Passit/passit.jpg";
 import passit1 from "../assets/images/Passit/passit1.jpg";
 import passit2 from "../assets/images/Passit/passit2.jpg";

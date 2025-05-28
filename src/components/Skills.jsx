@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Star } from "lucide-react";
 import { SiFirebase } from 'react-icons/si';
 import { FaHtml5, FaCss3Alt, FaJsSquare, FaJava, FaPython, FaPhp, FaLaravel, FaVuejs, FaAws, FaDatabase, FaDocker, FaLinux, FaGithub, FaWindows, FaReact } from "react-icons/fa";
 import RadarChart from "./RadarChart";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { ChevronDown, ChevronUp } from "lucide-react";
 
 export default function Skills() {
   const [isOpen, setIsOpen] = useState(false);

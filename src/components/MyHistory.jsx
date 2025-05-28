@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import school from "../assets/images/IT.jpg"
+import school from "../assets/images/aso.jpg"
 import license from "../assets/images/license.jpg"
 import study from "../assets/images/study.jpg"
 import Hackathon from "../assets/images/Hack U.jpg"

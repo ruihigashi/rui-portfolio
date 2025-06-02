@@ -14,7 +14,7 @@ export default function Skills() {
   }, []);
 
   return (
-    <section className="bg-[url('/home/rui0421/rui-portfolio/src/assets/images/leather.jpg')] py-20 px-4 bg-zinc-900 text-white" id="skills">
+    <section className="bg-[url('/home/rui0421/rui-portfolio/src/assets/images/blackground.jpg')] py-20 px-4 bg-zinc-900 text-white" id="skills">
   <div className="max-w-5xl mx-auto text-center">
     <h2 className="text-4xl md:text-6xl font-semibold mb-6 font-serif tracking-wide">SKILL</h2>
     <p className="text-gray-300 mt-4 text-sm md:text-base leading-relaxed" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-cubic">

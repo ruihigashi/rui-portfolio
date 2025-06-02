@@ -125,7 +125,7 @@ export default function StoryTimeline() {
   }, []);
 
   return (
-    <section className="bg-[url('/home/rui0421/rui-portfolio/src/assets/images/leather.jpg')] bg-zinc-900 text-white py-16 px-4" id="timeline">
+    <section className="bg-[url('/home/rui0421/rui-portfolio/src/assets/images/blackground.jpg')] bg-zinc-900 text-white py-16 px-4" id="timeline">
       <h2 className="text-4xl md:text-6xl font-semibold text-center mb-6 font-serif tracking-wide">My History</h2>
       <p className="text-center text-gray-300 max-w-2xl mx-auto mt-4 mb-6 text-sm md:text-base leading-relaxed" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
         専門学校入学から現在までの経歴を時系列でまとめてます。横にスクロールしながらご覧ください。

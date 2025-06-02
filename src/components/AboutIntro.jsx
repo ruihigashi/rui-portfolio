@@ -9,7 +9,7 @@ export default function AboutIntro() {
 
   return (
     <section
-      className="bg-[url('/home/rui0421/rui-portfolio/src/assets/images/leather.jpg')] min-h-screen flex items-center justify-center px-4 snap-start bg-zinc-900 text-white"
+      className="bg-[url('/home/rui0421/rui-portfolio/src/assets/images/blackground.jpg')] min-h-screen flex items-center justify-center px-4 snap-start bg-zinc-900 text-white"
       id="about-intro"
     >
       <div className="max-w-2xl text-center">

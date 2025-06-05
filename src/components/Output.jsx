@@ -37,6 +37,7 @@ import luana3 from "../assets/images/LUANA/luana3.jpg";
 import luana4 from "../assets/images/LUANA/luana4.jpg";
 import luana5 from "../assets/images/LUANA/luana5.jpg";
 import luana6 from "../assets/images/LUANA/luana6.jpg";
+import luana7 from "../assets/images/LUANA/luana7.jpg";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -182,9 +183,9 @@ export default function Projects() {
         </>
       ),
       image: luana,
-      images: [luana, luana1, luana2, luana3, luana4, luana5, luana6],
+      images: [luana, luana1, luana2, luana3, luana4, luana5, luana7, luana6],
       link: "https://luana-s-miruto.com/",
-      technology: "React.js, TypeScript.js, spabase,"
+      technology: "React.js, TypeScript.js, Node.js, spabase,"
     },
   ];
 

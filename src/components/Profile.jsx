@@ -44,7 +44,7 @@ export default function About() {
         <div className="text-center md:text-left max-w-2xl" data-aos="fade-up">
 
           <h2 className="text-4xl md:text-5xl font-bold mb-4">ようこそ</h2>
-          <p className="text-m text-gray-300 mt-6">
+          <p className="text-sm text-gray-300 mt-6">
             宮崎県出身の専門学生。<br />
             小・中・高とサッカー漬けの毎日で、将来は公務員を目指していたためエンジニアとは無縁の人生を送っておりました。
             そんな時「創造する人の時代」という本を読み、エンジニアという職に興味を持ちました。

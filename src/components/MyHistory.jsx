@@ -12,6 +12,7 @@ import award3 from "../assets/images/charekyara.jpg"
 import award4 from "../assets/images/MBSD.jpg"
 import award5 from "../assets/images/giikuhaku.jpg"
 import myPortfolio from "../assets/images/myPortfolio.jpg"
+import kennkyuu from "../assets/images/asoukenkyuu.jpg"
 
 const timelineData = [
   {
@@ -107,15 +108,24 @@ const timelineData = [
     image: award5,
   },
   {
-    year: "2025年1月~現在",
+    year: "2025年1月~3月",
     title: "個人開発と資格勉強",
     description: <>
-      現在は個人開発に力を入れており<br />
+      個人開発に力を入れ、<br />
       自身のポートフォリオサイトや<br />
       母が営む美容室のサイトを作成し<br />
       保守・運用を行っております。<br />
     </>,
     image: myPortfolio,
+  },
+  {
+    year: "2025年4月",
+    title: "研究室設立",
+    description: <>
+      今年度から有志で、<br />
+      「麻生情報工学研究室」を設立。
+    </>,
+    image: kennkyuu,
   },
 ];
 

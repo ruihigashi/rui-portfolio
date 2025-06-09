@@ -12,7 +12,7 @@ import award3 from "../assets/images/charekyara.jpg"
 import award4 from "../assets/images/MBSD.jpg"
 import award5 from "../assets/images/giikuhaku.jpg"
 import myPortfolio from "../assets/images/myPortfolio.jpg"
-import kennkyuu from "../assets/images/asoukenkyuu.jpg"
+import kennkyuu from "../assets/images/asokennkyuu.jpg"
 
 const timelineData = [
   {

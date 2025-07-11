@@ -13,6 +13,7 @@ import award4 from "../assets/images/MBSD.jpg"
 import award5 from "../assets/images/giikuhaku.jpg"
 import myPortfolio from "../assets/images/myPortfolio.jpg"
 import kennkyuu from "../assets/images/asokennkyuu.jpg"
+import intern from "../assets/images/intern.jpg"
 
 const timelineData = [
   {
@@ -126,6 +127,15 @@ const timelineData = [
       「麻生情報工学研究室」を設立。
     </>,
     image: kennkyuu,
+  },
+  {
+    year: "2025年7月~",
+    title: "長期インターン",
+    description: <>
+      株式会社26での<br />
+      長期インターンを開始。<br />
+    </>,
+    image: intern,
   },
 ];
 

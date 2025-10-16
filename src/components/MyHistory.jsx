@@ -14,6 +14,7 @@ import award5 from "../assets/images/giikuhaku.jpg"
 import myPortfolio from "../assets/images/myPortfolio.jpg"
 import kennkyuu from "../assets/images/asokennkyuu.jpg"
 import intern from "../assets/images/intern.jpg"
+import rizap from "../assets/images/rizap.jpg"
 
 const timelineData = [
   {
@@ -136,6 +137,15 @@ const timelineData = [
       長期インターンを開始。<br />
     </>,
     image: intern,
+  },
+    {
+    year: "2025年9月30日",
+    title: "RIZAPハッカソン",
+    description: <>
+      ut.code();サークル×RIZAPハッカソンにて<br />
+      最優秀賞を受賞。<br />
+    </>,
+    image: rizap,
   },
 ];
 

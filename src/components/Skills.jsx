@@ -50,7 +50,7 @@ export default function Skills() {
               <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
                 <SkillItem icon={<FaHtml5 className="text-5xl text-orange-500" data-aos="fade-up" />} name="HTML5" stars={5} description="チーム・個人開発でアプリを開発する際に積極的に使用。長期インターンの現場でも使用。" />
                 <SkillItem icon={<FaCss3Alt className="text-5xl text-blue-500" data-aos="fade-up" />} name="CSS3" stars={5} description="チーム・個人開発でアプリを開発する際に積極的に使用。長期インターンの現場でも使用。最近はよくtailwindCSSを使用している" />
-                <SkillItem icon={<FaJsSquare className="text-5xl text-yellow-500" />} name="JavaScript" stars={5} description="JavaScriptを使って動的なUIの実装に挑戦中。" />
+                <SkillItem icon={<FaJsSquare className="text-5xl text-yellow-500" />} name="JavaScript" stars={5} description="チーム・個人開発でアプリを開発する際に積極的に使用。長期インターンの現場でも使用。最近はほとんどTypeScriptで書いてる " />
                 <SkillItem icon={<FaJsSquare className="text-5xl text-yellow-500" />} name="TypeScript" stars={5} description="JavaScriptを使って動的なUIの実装に挑戦中。" />
               </div>
             </SkillSection>

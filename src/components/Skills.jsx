@@ -69,8 +69,8 @@ export default function Skills() {
             <SkillSection title="FW">
               <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
                 <SkillItem icon={<FaLaravel className="text-5xl text-red-600" />} name="Laravel" stars={3} description="授業で学習。MDCモデルを理解し、実際に使用できる。" />
-                <SkillItem icon={<FaVuejs className="text-5xl text-green-600" />} name="Vue.js" stars={2} description="セキュリティコンテストに参加した際に独学で学習。実際に使用してサイト作成。" />
-                <SkillItem icon={<FaReact className="text-5xl" color="#61DAFB" />} name="React.js" stars={4} description="本サイトや、母の美容室サイトを作成した際に独学で学習。実際に使用してサイト作成。" />
+                <SkillItem icon={<FaVuejs className="text-5xl text-green-600" />} name="Vue.js" stars={3} description="セキュリティコンテストに参加した際に独学で学習。実際に使用してサイト作成。" />
+                <SkillItem icon={<FaReact className="text-5xl" color="#61DAFB" />} name="React.js" stars={5} description="チーム・個人開発でアプリを開発する際に積極的に使用。長期インターンの現場でも使用。" />
               </div>
             </SkillSection>
 

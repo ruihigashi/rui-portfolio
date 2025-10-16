@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Star } from "lucide-react";
-import { SiFirebase } from 'react-icons/si';
+import { SiDart, SiFirebase, SiTypescript } from 'react-icons/si';
 import { FaHtml5, FaCss3Alt, FaJsSquare, FaJava, FaPython, FaPhp, FaLaravel, FaVuejs, FaAws, FaDatabase, FaDocker, FaLinux, FaGithub, FaWindows, FaReact } from "react-icons/fa";
 import RadarChart from "./RadarChart";
 import AOS from "aos";
@@ -48,18 +48,19 @@ export default function Skills() {
       <div className="mt-10 space-y-16" id="skill-details">
         <SkillSection title="FRONT-END">
               <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
-                <SkillItem icon={<FaHtml5 className="text-5xl text-orange-500" data-aos="fade-up" />} name="HTML5" stars={5} description="チーム・個人開発でアプリを開発する際に積極的に使用。長期インターンの現場でも使用。" />
-                <SkillItem icon={<FaCss3Alt className="text-5xl text-blue-500" data-aos="fade-up" />} name="CSS3" stars={5} description="チーム・個人開発でアプリを開発する際に積極的に使用。長期インターンの現場でも使用。最近はよくtailwindCSSを使用している" />
-                <SkillItem icon={<FaJsSquare className="text-5xl text-yellow-500" />} name="JavaScript" stars={5} description="チーム・個人開発でアプリを開発する際に積極的に使用。長期インターンの現場でも使用。最近はほとんどTypeScriptで書いてる " />
-                <SkillItem icon={<FaJsSquare className="text-5xl text-yellow-500" />} name="TypeScript" stars={5} description="JavaScriptを使って動的なUIの実装に挑戦中。" />
+                <SkillItem icon={<FaHtml5 className="text-5xl text-orange-500" data-aos="fade-up" />} name="HTML5" stars={5} description="チーム・個人開発でアプリを開発する際に積極的に使用。長期インターンの現場でも使用しています。" />
+                <SkillItem icon={<FaCss3Alt className="text-5xl text-blue-500" data-aos="fade-up" />} name="CSS3" stars={5} description="チーム・個人開発でアプリを開発する際に積極的に使用。長期インターンの現場でも使用。最近はよくtailwindCSSを使用しています。" />
+                <SkillItem icon={<FaJsSquare className="text-5xl text-yellow-500" />} name="JavaScript" stars={5} description="チーム・個人開発でアプリを開発する際に積極的に使用。長期インターンの現場でも使用。最近はほとんどTypeScriptで書いています。 " />
+                <SkillItem icon={<SiTypescript className="text-5xl text-blue-400" />} name="TypeScript" stars={5} description="型安全なコードで、信頼性の高いフロントエンド開発を行うことができるため、現在はTypeScriptでコードを書くようにしています。" />
+                <SkillItem icon={<SiDart className="text-5xl text-blue-500" />} name="Dart" stars={4} description="スマホアプリを作成した際に使用。JavaScriptの書き方に似ており、比較的簡単に習得できました。" />
               </div>
             </SkillSection>
 
             <SkillSection title="BACK-END">
               <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
                 <SkillItem icon={<FaJava className="text-5xl text-red-600" />} name="Java" stars={3} description="授業等でJavaを通してオブジェクト指向を学習し、開発環境ではEclipseを使用しました。" />
-                <SkillItem icon={<FaPhp className="text-5xl text-indigo-600" />} name="PHP" stars={3} description="授業等でPHPを学習し、活用してwebサイトを作成。" />
-                <SkillItem icon={<FaPython className="text-5xl text-yellow-600" />} name="Python" stars={3} description="セキュリティコンテストに参加した際に少し使用。独学で学習中。" />
+                <SkillItem icon={<FaPhp className="text-5xl text-indigo-600" />} name="PHP" stars={4} description="授業等でPHPを学習し、活用してwebサイト・Webアプリを作成。" />
+                <SkillItem icon={<FaPython className="text-5xl text-yellow-600" />} name="Python" stars={4} description="セキュリティコンテストに参加した際に使用。現在開発しているスマホアプリで機械学習を用いるため、独学で学習中。" />
               </div>
             </SkillSection>
 

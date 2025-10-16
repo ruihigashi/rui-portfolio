@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import { Star } from "lucide-react";
-import { SiDart, SiFirebase, SiTypescript } from 'react-icons/si';
+import { SiCplusplus, SiDart, SiFirebase, SiTypescript } from 'react-icons/si';
 import { FaHtml5, FaCss3Alt, FaJsSquare, FaJava, FaPython, FaPhp, FaLaravel, FaVuejs, FaAws, FaDatabase, FaDocker, FaLinux, FaGithub, FaWindows, FaReact } from "react-icons/fa";
 import RadarChart from "./RadarChart";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { FaC } from "react-icons/fa6";
 
 export default function Skills() {
   const [isOpen, setIsOpen] = useState(false);
@@ -60,7 +61,8 @@ export default function Skills() {
               <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
                 <SkillItem icon={<FaJava className="text-5xl text-red-600" />} name="Java" stars={3} description="授業等でJavaを通してオブジェクト指向を学習し、開発環境ではEclipseを使用しました。" />
                 <SkillItem icon={<FaPhp className="text-5xl text-indigo-600" />} name="PHP" stars={4} description="授業等でPHPを学習し、活用してwebサイト・Webアプリを作成。" />
-                <SkillItem icon={<FaPython className="text-5xl text-yellow-600" />} name="Python" stars={4} description="セキュリティコンテストに参加した際に使用。現在開発しているスマホアプリで機械学習を用いるため、独学で学習中。" />
+                <SkillItem icon={<FaPython className="text-5xl text-yellow-500" />} name="Python" stars={4} description="セキュリティコンテストに参加した際に使用。現在開発しているスマホアプリで機械学習を用いるため、独学で学習中。" />
+                <SkillItem icon={<SiCplusplus className="text-5xl text-blue-500" />} name="C++" stars={2} description="最近独学で学習中。全ての根底にある言語なので習得したい。" />
               </div>
             </SkillSection>
 

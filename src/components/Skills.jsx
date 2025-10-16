@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Star } from "lucide-react";
-import { SiCplusplus, SiDart, SiFirebase, SiTypescript } from 'react-icons/si';
+import { SiCplusplus, SiDart, SiFirebase, SiNestjs, SiTypescript } from 'react-icons/si';
 import { FaHtml5, FaCss3Alt, FaJsSquare, FaJava, FaPython, FaPhp, FaLaravel, FaVuejs, FaAws, FaDatabase, FaDocker, FaLinux, FaGithub, FaWindows, FaReact } from "react-icons/fa";
 import RadarChart from "./RadarChart";
 import AOS from "aos";
@@ -62,7 +62,7 @@ export default function Skills() {
                 <SkillItem icon={<FaJava className="text-5xl text-red-600" />} name="Java" stars={3} description="授業等でJavaを通してオブジェクト指向を学習し、開発環境ではEclipseを使用しました。" />
                 <SkillItem icon={<FaPhp className="text-5xl text-indigo-600" />} name="PHP" stars={4} description="授業等でPHPを学習し、活用してwebサイト・Webアプリを作成。" />
                 <SkillItem icon={<FaPython className="text-5xl text-yellow-500" />} name="Python" stars={4} description="セキュリティコンテストに参加した際に使用。現在開発しているスマホアプリで機械学習を用いるため、独学で学習中。" />
-                <SkillItem icon={<SiCplusplus className="text-5xl text-blue-500" />} name="C++" stars={2} description="最近独学で学習中。全ての根底にある言語なので習得したい。" />
+                <SkillItem icon={<SiCplusplus className="text-5xl text-blue-500" />} name="C++" stars={2} description="最近独学で学習中。低レベルから高レベルまで幅広く扱える言語として、アルゴリズム実装に活用したい。" />
               </div>
             </SkillSection>
 
@@ -71,6 +71,7 @@ export default function Skills() {
                 <SkillItem icon={<FaLaravel className="text-5xl text-red-600" />} name="Laravel" stars={3} description="授業で学習。MDCモデルを理解し、実際に使用できる。" />
                 <SkillItem icon={<FaVuejs className="text-5xl text-green-600" />} name="Vue.js" stars={3} description="セキュリティコンテストに参加した際に独学で学習。実際に使用してサイト作成。" />
                 <SkillItem icon={<FaReact className="text-5xl" color="#61DAFB" />} name="React.js" stars={5} description="チーム・個人開発でアプリを開発する際に積極的に使用。長期インターンの現場でも使用。" />
+                <SkillItem icon={<SiNestjs className="text-5xl text-red-500" />} name="Nest.js" stars={5} description="長期インターンの現場でサーバーサイドの開発を行う際に使用。" />
               </div>
             </SkillSection>
 

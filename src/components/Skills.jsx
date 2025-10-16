@@ -48,9 +48,10 @@ export default function Skills() {
       <div className="mt-10 space-y-16" id="skill-details">
         <SkillSection title="FRONT-END">
               <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
-                <SkillItem icon={<FaHtml5 className="text-5xl text-orange-500" data-aos="fade-up" />} name="HTML5" stars={4} description="授業等で学習し、ＥＣサイトを作成した際に使用。" />
-                <SkillItem icon={<FaCss3Alt className="text-5xl text-blue-500" data-aos="fade-up" />} name="CSS3" stars={4} description="授業等で学習し、ＥＣサイトを作成した際に使用。" />
-                <SkillItem icon={<FaJsSquare className="text-5xl text-yellow-500" />} name="JavaScript" stars={3} description="JavaScriptを使って動的なUIの実装に挑戦中。" />
+                <SkillItem icon={<FaHtml5 className="text-5xl text-orange-500" data-aos="fade-up" />} name="HTML5" stars={5} description="チーム・個人開発でアプリを開発する際に積極的に使用。長期インターンの現場でも使用。" />
+                <SkillItem icon={<FaCss3Alt className="text-5xl text-blue-500" data-aos="fade-up" />} name="CSS3" stars={5} description="チーム・個人開発でアプリを開発する際に積極的に使用。長期インターンの現場でも使用。最近はよくtailwindCSSを使用している" />
+                <SkillItem icon={<FaJsSquare className="text-5xl text-yellow-500" />} name="JavaScript" stars={5} description="JavaScriptを使って動的なUIの実装に挑戦中。" />
+                <SkillItem icon={<FaJsSquare className="text-5xl text-yellow-500" />} name="TypeScript" stars={5} description="JavaScriptを使って動的なUIの実装に挑戦中。" />
               </div>
             </SkillSection>
 
@@ -125,7 +126,7 @@ function SkillSection({ title, children }) {
   return (
     <div>
       <h3 className="text-xl font-bold mb-6 tracking-wide border-b-2 border-gray-300 inline-block pb-2">{title}</h3>
-      <div className="grid md:grid-cols-2 gap-10 text-left max-w-4xl mx-auto mb-16">
+      <div className="gap-10 text-left max-w-4xl mx-auto mb-16">
         {children}
       </div>
     </div>
@@ -137,19 +138,19 @@ function SkillItem({ icon, name, stars, description }) {
     <div className="flex space-x-4 items-start">
       <div>{icon}</div>
       <div>
-        <h4 className="text-sm font-bold mb-2">{name}</h4>
-        <div className="flex mb-3">
+        <h4 className="text-lg font-bold mb-1">{name}</h4>
+        <div className="flex mb-2">
           {[...Array(5)].map((_, i) => (
             <Star
               key={i}
-              size={16}
+              size={18}
               fill={i < stars ? "#facc15" : "#d1d5db"}
               stroke=""
               className="mr-1"
             />
           ))}
         </div>
-        <p className="text-sm text-gray-300">{description}</p>
+        <p className="text-md text-gray-300 mb-3">{description}</p>
       </div>
     </div>
   );

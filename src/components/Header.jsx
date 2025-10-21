@@ -16,7 +16,7 @@ export default function Header() {
   return (
     <>
       {/* ヘッダー */}
-      <header className="fixed w-full z-50 bg-opacity-80 bg-purple-600 font-semibold">
+      <header className="fixed w-full z-50 bg-purple-600 font-semibold">
         <nav className="mx-10 mx-auto py-4 flex justify-between items-center text-white">
           {/* ハンバーガー（モバイル時のみ左） */}
           <div className="md:hidden z-20">

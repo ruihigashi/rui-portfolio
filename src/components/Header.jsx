@@ -16,8 +16,8 @@ export default function Header() {
   return (
     <>
       {/* ヘッダー */}
-      <header className="fixed top-0 left-0 w-full z-50 bg-opacity-80 backdrop-blur-sm shadow-md bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 font-semibold">
-        <nav className="relative max-w-6xl mx-auto px-6 py-4 flex justify-between items-center text-white">
+      <header className="fixed w-full z-50 bg-opacity-80 bg-purple-600 font-semibold">
+        <nav className="mx-10 mx-auto py-4 flex justify-between items-center text-white">
           {/* ハンバーガー（モバイル時のみ左） */}
           <div className="md:hidden z-20">
             <button

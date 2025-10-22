@@ -5,7 +5,6 @@ import { FaHtml5, FaCss3Alt, FaJsSquare, FaJava, FaPython, FaPhp, FaLaravel, FaV
 import RadarChart from "./RadarChart";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { FaC } from "react-icons/fa6";
 
 export default function Skills() {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,8 +19,8 @@ export default function Skills() {
     <h2 className="text-4xl md:text-6xl font-semibold mb-6 font-serif tracking-wide">SKILL</h2>
     <p className="text-gray-300 mt-4 text-sm md:text-base leading-relaxed" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
       私の現在のスキルを8つの項目に分けてグラフィカルにまとめました。<br />
-      開発では主にフロントエンドを担当し、広く浅くでは<br />ありますがバックエンドの開発にも携わってきました。<br />
-      今後はバックエンド系の開発（クラウド含む）にも力をいれ、<br/>オールラウンドに対応できるエンジニアになりたいと考えています。<br />
+      開発では主にフロントエンドを担当し、広く浅くではありますがバックエンドの開発にも携わってきました。<br />
+      今後はバックエンド系の開発（クラウド含む）にも力をいれ、オールラウンドに対応できるエンジニアになりたいと考えています。<br />
       エンジニアとしてはまだまだ未熟者ではありますが、今現在のスキルがどれくらいかが伝われば幸いです。<br />
       <br />
       <span className="font-medium text-red-400">
@@ -61,9 +60,9 @@ export default function Skills() {
 
             <SkillSection title="BACK-END">
               <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
-                <SkillItem icon={<FaJava className="text-5xl text-red-600" />} name="Java" stars={3} description="授業等でJavaを通してオブジェクト指向を学習し、開発環境ではEclipseを使用しました。" />
+                <SkillItem icon={<FaJava className="text-5xl text-red-600" />} name="Java" stars={4} description="授業等でJavaを通してオブジェクト指向を学習し、開発環境ではEclipseを使用しました。" />
                 <SkillItem icon={<FaPhp className="text-5xl text-indigo-600" />} name="PHP" stars={4} description="授業等でPHPを学習し、活用してwebサイト・Webアプリを作成。" />
-                <SkillItem icon={<FaPython className="text-5xl text-yellow-500" />} name="Python" stars={4} description="セキュリティコンテストに参加した際に使用。現在開発しているスマホアプリで機械学習を用いるため、独学で学習中。" />
+                <SkillItem icon={<FaPython className="text-5xl text-yellow-500" />} name="Python" stars={3  } description="セキュリティコンテストに参加した際に使用。現在開発しているスマホアプリで機械学習を用いるため、独学で学習中。" />
                 <SkillItem icon={<SiCplusplus className="text-5xl text-blue-500" />} name="C++" stars={2} description="最近独学で学習中。低レベルから高レベルまで幅広く扱える言語として、アルゴリズム実装に活用したい。" />
               </div>
             </SkillSection>
@@ -79,7 +78,7 @@ export default function Skills() {
 
             <SkillSection title="DB">
               <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
-                <SkillItem icon={<SiFirebase className="text-5xl text-red-500" />} name="Firebase" stars={3} description="アプリ開発やwebサイト作成時は主にFirebaseを使用。" />
+                <SkillItem icon={<SiFirebase className="text-5xl text-red-500" />} name="Firebase" stars={4} description="アプリ開発やwebサイト作成時は主にFirebaseを使用。" />
                 <SkillItem icon={<FaDatabase className="text-5xl text-gray-700" />} name="MySQL" stars={3} description="LAMP環境構築を学ぶために使用しました。" />
               </div>
             </SkillSection>
@@ -92,14 +91,14 @@ export default function Skills() {
 
             <SkillSection title="INFRA">
               <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
-                <SkillItem icon={<FaDocker className="text-5xl text-indigo-600" />} name="Docker/Docker Compose" stars={2} description="セキュリティコンテストでネットワークを構築した際に少し使用。" />
+                <SkillItem icon={<FaDocker className="text-5xl text-indigo-600" />} name="Docker/Docker Compose" stars={4} description="セキュリティコンテストでネットワークを構築した際に少し使用。" />
               </div>
             </SkillSection>
 
             <SkillSection title="OS">
               <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
-                <SkillItem icon={<FaLinux className="text-5xl" />} name="Linux(centOS)" stars={3} description="インストールから環境設定、開発が可能。" />
-                <SkillItem icon={<FaWindows className="text-5xl" />} name="Windows" stars={4} description="インストールから環境設定、開発が可能。開発では、Windows11を使用しています）。" />
+                <SkillItem icon={<FaLinux className="text-5xl" />} name="Linux(centOS)" stars={5} description="インストールから環境設定、開発が可能。" />
+                <SkillItem icon={<FaWindows className="text-5xl" />} name="Windows" stars={5} description="インストールから環境設定、開発が可能。開発では、Windows11を使用しています。" />
               </div>
             </SkillSection>
 

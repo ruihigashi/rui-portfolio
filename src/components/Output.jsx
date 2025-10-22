@@ -84,7 +84,7 @@ export default function Projects() {
       shortDescription: "React.js + Pythonで作成したASMtool。\nパッシブスキャンを用いて外部からIT資産を発見し、\nそれらに存在する脆弱性等を検出するツール。",
       description: (
         <>
-          2このツールは、2024年12月開催の株式会社MBSD（三井物産セキュアディレクション）が主催するセキュリティコンテストにおいて、
+          このツールは、2024年12月開催の株式会社MBSD（三井物産セキュアディレクション）が主催するセキュリティコンテストにおいて、
           ASMをテーマにした課題に対して調査を行い手法を提案し実現することで最優秀賞を受賞しました。
           <br />
           ASMに対してどのようなアプローチで調査を行い評価をするのかという論文を作成し、
@@ -229,7 +229,7 @@ export default function Projects() {
               {/* Close Button */}
               <button
                 onClick={() => setSelectedProject(null)}
-                className="absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-full bg-purple-200 text-gray-600 hover:bg-gray-300 hover:text-black text-sm font-bold transition"
+                className="absolute top-4 right-4 w-10 h-10 flex items-center justify-center rounded-full bg-white text-gray-600 text-2xl font-bold transition"
               >
                 ×
               </button>
@@ -239,7 +239,7 @@ export default function Projects() {
               <div className="flex flex-col md:flex-row gap-8 justify-center items-start">
                 {/* 左側：説明とリンク */}
                 <div className="flex-1 min-w-[280px]">
-                  <p className="text-sm text-gray-700 leading-snug line-clamp-10 mb-4 min-h-[11rem]">
+                  <p className="text-base text-gray-700 leading-snug line-clamp-10 mb-4 min-h-[11rem]">
                     {selectedProject.description}
                   </p>
                   <a

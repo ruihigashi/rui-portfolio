@@ -34,7 +34,7 @@ const data = {
     datasets: [
         {
             label: "Skill Level",
-            data: [4, 3, 2, 3, 4, 2, 3, 4],
+            data: [5, 4, 5, 4, 3, 3, 4, 5],
             backgroundColor: "rgba(168, 85, 247, 0.4)", // violet-500
             borderColor: "rgba(168, 85, 247, 1)",
             borderWidth: 2,

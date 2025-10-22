@@ -19,12 +19,14 @@ export default function Skills() {
   <div className="max-w-5xl mx-auto text-center">
     <h2 className="text-4xl md:text-6xl font-semibold mb-6 font-serif tracking-wide">SKILL</h2>
     <p className="text-gray-300 mt-4 text-sm md:text-base leading-relaxed" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
-      私の現在のスキルを8つの項目に分けて<br />グラフィカルにまとめました。<br />
+      私の現在のスキルを8つの項目に分けてグラフィカルにまとめました。<br />
       開発では主にフロントエンドを担当し、広く浅くでは<br />ありますがバックエンドの開発にも携わってきました。<br />
-      今後はバックエンド系の開発（クラウド含む）にも<br/>力をいれ、オールラウンドに対応できるエンジニアになりたいと考えています。<br />
-      エンジニアとしてはまだまだ未熟者ではありますが今現在のスキルがどれくらいかが伝われば幸いです。<br />
+      今後はバックエンド系の開発（クラウド含む）にも力をいれ、<br/>オールラウンドに対応できるエンジニアになりたいと考えています。<br />
+      エンジニアとしてはまだまだ未熟者ではありますが、今現在のスキルがどれくらいかが伝われば幸いです。<br />
       <br />
+      <span className="font-medium text-red-400">
       ※授業やハッカソンの開発等で実際に使用した技術のみ掲載しております。
+      </span>
     </p>
 
     <div className="my-12" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-cubic">

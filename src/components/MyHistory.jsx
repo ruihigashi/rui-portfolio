@@ -15,6 +15,7 @@ import myPortfolio from "../assets/images/myPortfolio.jpg"
 import kennkyuu from "../assets/images/asokennkyuu.jpg"
 import intern from "../assets/images/intern.jpg"
 import rizap from "../assets/images/rizap.jpg"
+import jphucks from "../assets/images/jphucks.jpg"
 
 const timelineData = [
   {
@@ -138,7 +139,7 @@ const timelineData = [
     </>,
     image: intern,
   },
-    {
+  {
     year: "2025年9月30日",
     title: "RIZAPハッカソン",
     description: <>
@@ -146,6 +147,15 @@ const timelineData = [
       最優秀賞を受賞。<br />
     </>,
     image: rizap,
+  },
+  {
+    year: "2025年10月19日",
+    title: "JPHUCKS 福岡予選",
+    description: <>
+      JPHUCKS 福岡予選にて<br />
+      ベストオーディエンス賞を受賞。<br />
+    </>,
+    image: jphucks,
   },
 ];
 

@@ -1,12 +1,35 @@
-# React + Vite
+# rui-portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+これは、学校入学から現在までのポートフォリオサイトです。<br/>
 
-Currently, two official plugins are available:
+## 概要
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+このサイトは、私のスキル、制作物、経歴を紹介するために作成しました。<br/>
+Reactを使用し、Tailwind CSSでスタイリングしています。<br/>
+視覚的にも楽しめるように工夫し、`framer-motion`によるアニメーションや`Chart.js`によるレーダーチャートなどを実装しております。<br/>
+どういう学校生活を送ったのかを辿れる他、ハッカソンに参加した際の様々な制作物を閲覧することができます。<br/>
+興味のある方はぜひご覧ください。
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## 特徴
+
+- **SakuraCanvas:** 背景に桜が舞うアニメーション
+- **Header:** 各セクションへのナビゲーション
+- **Hero:** キャッチーな自己紹介
+- **AboutIntro:** 私についての簡単な紹介
+- **Profile:** 詳細なプロフィール
+- **Skills:** スキルをレーダーチャートで可視化
+- **Output:** 制作物一覧
+- **MyHistory:** 入学から現在までの経歴
+- **Contact:** 連絡先
+
+## 使用技術
+
+- React
+- Vite
+- Tailwind CSS
+- Framer Motion
+- Chart.js
+- Lucide React
+- React Icons

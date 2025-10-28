@@ -6,11 +6,16 @@
 
 ## 概要
 
-このサイトは、私のスキル、制作物、経歴を紹介するために作成しました。<br/>
-Reactを使用し、Tailwind CSSでスタイリングしています。<br/>
-視覚的にも楽しめるように工夫し、`framer-motion`によるアニメーションや`Chart.js`によるレーダーチャートなどを実装しております。<br/>
-どういう学校生活を送ったのかを辿れる他、ハッカソンに参加した際の様々な制作物を閲覧することができます。<br/>
-興味のある方はぜひご覧ください。
+このサイトは、私の スキル・制作物・経歴 を紹介するために制作しました。<br/>
+フロントエンドは React、スタイリングには Tailwind CSS を使用しています。<br/>
+
+アニメーションには `framer-motion` を採用し、スムーズで魅力的な動きを実現しました。<br/>
+また、`Chart.js` を用いてスキルをレーダーチャートで可視化しています。<br/>
+
+このポートフォリオでは、専門学校入学から現在に至るまでの歩みを辿ることができ、<br/>
+さらに、ハッカソンや個人開発で制作したプロジェクト もご覧いただけます。<br/>
+
+興味を持っていただけた方は、ぜひサイトを訪れてみてください。
 
 
 
@@ -25,8 +30,6 @@ Reactを使用し、Tailwind CSSでスタイリングしています。<br/>
 - **Output:** 制作物一覧
 - **MyHistory:** 入学から現在までの経歴
 - **Contact:** 連絡先
-
-## 使用技術
 
 ## 使用技術
 
@@ -58,3 +61,6 @@ Reactを使用し、Tailwind CSSでスタイリングしています。<br/>
   <img src="https://img.shields.io/badge/-Lucide%20React-0A0A0A.svg?logo=lucide&style=for-the-badge&logoColor=white"/>
   <img src="https://img.shields.io/badge/-React%20Icons-E91E63.svg?logo=react&style=for-the-badge&logoColor=white"/>
 </p>
+
+## サイトリンク
+https://higashi-rui-portfolio.netlify.app/

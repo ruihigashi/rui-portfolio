@@ -28,10 +28,33 @@ Reactを使用し、Tailwind CSSでスタイリングしています。<br/>
 
 ## 使用技術
 
-- React
-- Vite
-- Tailwind CSS
-- Framer Motion
-- Chart.js
-- Lucide React
-- React Icons
+## 使用技術
+
+<p align="left">
+  
+- フロントエンド<br/>
+  <img src="https://img.shields.io/badge/-React-61DAFB.svg?logo=react&style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/-Vite-646CFF.svg?logo=vite&style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/-Tailwind%20CSS-06B6D4.svg?logo=tailwindcss&style=for-the-badge&logoColor=white"/>
+
+</p>
+
+<p align="left">
+
+- アニメーション<br/>
+  <img src="https://img.shields.io/badge/-Framer%20Motion-0055FF.svg?logo=framer&style=for-the-badge&logoColor=white"/>
+</p>
+
+<p align="left">
+  
+- グラフ<br/>
+  <img src="https://img.shields.io/badge/-Chart.js-FF6384.svg?logo=chartdotjs&style=for-the-badge&logoColor=white"/>
+
+</p>
+
+<p align="left">
+  
+- アイコン<br/>
+  <img src="https://img.shields.io/badge/-Lucide%20React-0A0A0A.svg?logo=lucide&style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/-React%20Icons-E91E63.svg?logo=react&style=for-the-badge&logoColor=white"/>
+</p>

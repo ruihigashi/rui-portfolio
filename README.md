@@ -1,6 +1,8 @@
 # rui-portfolio
 
 これは、学校入学から現在までのポートフォリオサイトです。<br/>
+<img width="1919" height="806" alt="image" src="https://github.com/user-attachments/assets/68d4ed49-bd3d-434f-a46d-c0e9dcc2fa7b" />
+
 
 ## 概要
 

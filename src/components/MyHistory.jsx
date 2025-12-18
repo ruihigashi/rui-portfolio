@@ -16,6 +16,7 @@ import kennkyuu from "../assets/images/asokennkyuu.jpg"
 import intern from "../assets/images/intern.jpg"
 import rizap from "../assets/images/rizap.jpg"
 import jphucks from "../assets/images/jphucks.jpg"
+import giiku2025 from "../assets/images/giiku2025.jpg"
 
 const timelineData = [
   {
@@ -154,6 +155,26 @@ const timelineData = [
     description: <>
       JPHUCKS 福岡予選にて<br />
       ベストオーディエンス賞を受賞。<br />
+    </>,
+    image: jphucks,
+  },
+    {
+    year: "2025年11月30日",
+    title: "技育展 2025",
+    description: <>
+      技育展 2025にて<br />
+      株式会社CARTA HOLDINGS様から<br />
+      企業賞を受賞。<br />
+    </>,
+    image: giiku2025,
+  },
+    {
+    year: "2025年12月05日",
+    title: "EDD 2025",
+    description: <>
+      EDD2025にて<br />
+      アジアクエスト賞, パソナ賞, <br />
+      プロダクト部門の賞を受賞。<br />
     </>,
     image: jphucks,
   },

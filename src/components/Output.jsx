@@ -38,6 +38,13 @@ import luana4 from "../assets/images/LUANA/luana4.jpg";
 import luana5 from "../assets/images/LUANA/luana5.jpg";
 import luana6 from "../assets/images/LUANA/luana6.jpg";
 import luana7 from "../assets/images/LUANA/luana7.jpg";
+import nois from "../assets/images/Nois/nois.jpg";
+import nois1 from "../assets/images/Nois/nois1.jpg";
+import nois2 from "../assets/images/Nois/nois2.jpg";
+import nois3 from "../assets/images/Nois/nois3.jpg";
+import nois4 from "../assets/images/Nois/nois4.jpg";
+import nois5 from "../assets/images/Nois/nois5.jpg";
+import nois6 from "../assets/images/Nois/nois6.jpg";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -81,7 +88,7 @@ export default function Projects() {
     {
       title: "ASMtool",
 
-      shortDescription: "React.js + Pythonで作成したASMtool。\nパッシブスキャンを用いて外部からIT資産を発見し、\nそれらに存在する脆弱性等を検出するツール。",
+      shortDescription: "React + Pythonで作成したASMtool。\nパッシブスキャンを用いて外部からIT資産を発見し、\nそれらに存在する脆弱性等を検出するツール。",
       description: (
         <>
           このツールは、2024年12月開催の株式会社MBSD（三井物産セキュアディレクション）が主催するセキュリティコンテストにおいて、
@@ -97,7 +104,7 @@ export default function Projects() {
       image: mdc,
       images: [mdc, mdc1, mdc2, mdc3, mdc4],
       link: "https://protopedia.net/prototype/6731",
-      technology: "React.js, Next.js, tailwindcss, python,"
+      technology: "React, TypeScript, Next.js, tailwindcss, python,"
 
     },
     {
@@ -166,6 +173,7 @@ export default function Projects() {
       link: "https://protopedia.net/prototype/6742",
       technology: "Flutter, Firebase Authentication, vision API, translation API"
     },
+    
     {
       title: "LUANA",
       shortDescription: "React.jsとTypeScript.jsで作成した美容室サイト。\n実際にwebにあげて誰でも閲覧可能にしており、\n予約サイトと管理者サイトも別で作成済み。",
@@ -185,7 +193,32 @@ export default function Projects() {
       image: luana,
       images: [luana, luana1, luana2, luana3, luana4, luana5, luana7, luana6],
       link: "https://luana-s-miruto.com/",
-      technology: "React.js, TypeScript.js, Node.js, spabase,"
+      technology: "React, TypeScript, Node.js, supabase,"
+    },
+    {
+      title: "Nois",
+      shortDescription: "React, Flutterを用いて作成して無音通話アプリ。\nリップリーディングによって唇認識を行い、独自LLM\nを活用して無音の通話を実現。",
+      description: (
+        <>
+          このアプリは、2025年11月30日開催の技育展2025にて開発した無音通話アプリです。
+          <br />
+          OpenCVを使って唇の座標を取得し、それを入力に渡して推論させることでリップリーディングを実現。
+          LLMはローカル上で動くOllamaをベースに改良し、相手の通話画面に推論したテキストを表示することで無音通話を実現させました。
+          <br />
+          また、重度の聴覚障がいを抱える方でも使用していただけるように、チューニング機能を実装。
+          <br />
+          通話は「Call Kit」というフレームワークを使用し、通常のIOSと同等の機能を使用可能に。
+          <br />
+          この開発において、フロントエンドの全てと通話画面の実装を担当しました。
+          <br />
+          はじめはWebで作成していたのもあり、WebRTCの通話を実装していたのですが、Flutterへの移行する際に、
+          UI/UXを考慮し、「Call Kit」に変更。
+        </>
+      ),
+      image: nois,
+      images: [nois, nois1, nois2, nois3, nois4, nois5, nois6],
+      link: "https://protopedia.net/prototype/7533",
+      technology: "React, TypeScript, Node.js, Flutter, WebRTC, 独自LLM(Ollama), Call Kit, Firebase"
     },
   ];
 

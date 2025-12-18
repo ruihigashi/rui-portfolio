@@ -31,7 +31,7 @@ export default function About() {
           <h3 className="text-xl font-bold">東流生</h3>
           <p className="text-gray-500 text-sm">学生</p>
           <div className="flex justify-center space-x-4 mt-4 text-gray-500">
-            <a href="https://github.com/" className="hover:text-blue-500">
+            <a href="https://github.com/ruihigashi" className="hover:text-blue-500">
               <FaGithub />
             </a>
             <a href="https://protopedia.net/prototyper/rui0421" className="hover:text-blue-700">
